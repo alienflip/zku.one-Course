@@ -16,5 +16,5 @@
 ![k](https://github.com/alienflip/zku/blob/main/week_0/Screenshot%20(18).png)
 
 ### after
-
+> for all 10 transactions - gas : 46405 
 ![k](https://github.com/alienflip/zku/blob/main/week_0/Screenshot%20(24).png)
