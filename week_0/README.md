@@ -33,7 +33,7 @@
 
 > BallotPostPost.sol
 > for all 10 transactions 
->> Total: 
+>> Total: 257120
 
-![k]()
+![k](https://github.com/alienflip/zku/blob/main/week_0/Web%20capture_24-2-2022_17730_remix.ethereum.org.jpeg)
 
