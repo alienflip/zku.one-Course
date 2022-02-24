@@ -14,6 +14,7 @@
 > BallotPre.sol
 > for all 10 transactions 
 >> gasPerTransaction : 48657 
+
 >> Total: 486570
 
 ![k](https://github.com/alienflip/zku/blob/main/week_0/Screenshot%20(26).png)
@@ -23,6 +24,7 @@
 > BallotPost.sol
 > for all 10 transactions 
 >> gasPerTransaction : 46405 
+
 >> Total: 464050
 
 ![k](https://github.com/alienflip/zku/blob/main/week_0/Screenshot%20(24).png)
