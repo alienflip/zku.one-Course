@@ -17,4 +17,4 @@
 
 ### after
 
-![k](https://github.com/alienflip/zku/blob/main/week_0/Screenshot%20(21).png)
+![k](https://github.com/alienflip/zku/blob/main/week_0/Screenshot%20(24).png)
