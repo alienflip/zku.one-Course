@@ -3,45 +3,68 @@ pragma circom 2.0.0;
 include "mimcsponge.circom";
 
 /*
- * log function
- *  - assumes N is a power of 2
+ * log base 2 calculator
+ *  - assumes n is a power of 2
  */
-function L(N) {
-    var i = N;
-    var count = 0;
-    while (i >= 1) {
-        i = i / 2;
-        count++;
+function L(n) {
+    var height = n;
+    var counter = 0;
+    while (height > 1) {
+        height = height / 2;
+        counter++;
     }
-    return count;
+    return counter;
 }
 
-// dummy hash
-function hash(a, b){
-    return a + b;
+/*
+ * functions for calculating the child indexes of a node
+ */
+function left(index) {
+    return (index * 2) + 1;
+}
+function right(index) {
+    return (index * 2) + 2;
 }
 
 /*
  * merkle_root calculator
+ *  - assumes n >= 8
  */
 template merkle_root(n) {  
-    signal input leaves[n];  
+    signal input leaves[n];
     signal output root;
 
-    var treeHeight = L(n);
-    var memory[n] = leaves;
-    var counter = 0;
-    for (var i = treeHeight - 1; i >= 0; i--){
-        for(var j = 0; j < 2**i; j++){
-            if(j % 2 == 1){
-                memory[counter] = hash(memory[j - 1], memory[j]);
-                counter++;
-            }
-        }
-        counter = 0;
+    // MiMC specific variable
+    var k = 0;
+
+    // L(n) levels to the tree
+    var level_counter = L(n) - 1;
+
+    // there are n - 1 hashes to calculate
+    component hash_components[n - 1]; 
+
+    // initialise memory with the first row of hashes
+    for (var i = 2**level_counter - 2; i >= 2**(level_counter - 1) - 1; i--) {
+        var l_child = left(i);
+        var r_child = right(i);
+        hash_components[i] = MiMCSponge(2, 220, 1);
+        hash_components[i].ins[0] <== leaves[l_child];
+        hash_components[i].ins[1] <== leaves[l_child];
+        hash_components[i].k <== k;
     }
-    root <== memory[0];
+
+    // fill rest of tree
+    for(var i = 2**(level_counter - 1) - 2; i >= 0; i--) {
+        var l_child = left(i);
+        var r_child = right(i);
+        hash_components[i] = MiMCSponge(2, 220, 1);
+        hash_components[i].ins[0] <== hash_components[l_child].outs[0];
+        hash_components[i].ins[1] <== hash_components[r_child].outs[0];
+        hash_components[i].k <== k;
+    }
+
+    // output merkle root
+    root <== hash_components[0].outs[0];
 }
 
-
-component main = merkle_root(4);
+component main {public [leaves]} = merkle_root(8);
