@@ -22,7 +22,7 @@ cp input.json merkle_root_js/
 
 ## generate the witness
 ## --------------------
-##  - witness: 
+##  - witness: this is the statement we wish to prove but do not want to reveal
 cd merkle_root_cpp
 # execute c++ code to generate executionable
 make
@@ -36,23 +36,21 @@ cd ..
 
 ## initiate powers of tau ceremony
 ## -------------------------------
-##  -
+##  - here we produce partial public parameters that can be used by all participants that wish to use zk-SNARKs.
+##    in order to protect the parameters from compromise, the ceremony leverages a multi-party computation protocol
+##    the so called powers of tau : https://www.zfnd.org/blog/conclusion-of-powers-of-tau/
 snarkjs powersoftau new bn128 12 pot12_0000.ptau -v
 snarkjs powersoftau contribute pot12_0000.ptau pot12_0001.ptau --name="First contribution" -v
-
-## powers of tau phase 2
-## ---------------------
-##  -
 snarkjs powersoftau prepare phase2 pot12_0001.ptau pot12_final.ptau -v
 snarkjs groth16 setup merkle_root.r1cs pot12_final.ptau merkle_root_0000.zkey
 
 ## generate proof
 ## --------------
-##  -
+##  - encodes proof with (semi) homomorhpic function
 snarkjs zkey contribute merkle_root_0000.zkey merkle_root_0001.zkey --name="1st Contributor Name" -v
 snarkjs zkey export verificationkey merkle_root_0001.zkey verification_key.json
 
 ## verify proof
 ## ------------
-##  -
+##  - this is a similator which can interact with the proof, and "permute it" until a true bool is recieved
 snarkjs groth16 prove merkle_root_0001.zkey witness.wtns proof.json public.json
