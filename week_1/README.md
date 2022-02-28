@@ -6,7 +6,7 @@
 
 ### compiling, and executing powers of tau ceremony
 
-> ./exec.sh
+> [./exec.sh](https://github.com/alienflip/zku/blob/main/week_1/exec.sh)
 
 ![tau1](https://github.com/alienflip/zku/blob/main/week_1/Screenshot%20(34).png)
 
