@@ -20,6 +20,6 @@
 
 ### Do we need this for a simple calculation of a merkle root?
 
-> No. However, the technology could be used inversely to search a merkle root a particular transaction. This enables bundling of data, and can speed up/make lighter a bridgig verification process.
+> No. However, the technology could be used inversely to search a merkle root a particular transaction. This enables bundling of data, and can speed up/make lighter a bridging verification process.
 
 # NFT
