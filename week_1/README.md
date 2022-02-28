@@ -1,4 +1,4 @@
-# merkle root
+# merkle root circom
 
 > merkle_root.circom
 
@@ -20,4 +20,6 @@
 
 > [public.json](https://github.com/alienflip/zku/blob/main/week_1/public.json)
 
-# NFT
+# Minting an NFT and committing the mint data to a Merkle Tree
+
+> 
