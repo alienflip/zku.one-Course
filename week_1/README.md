@@ -11,3 +11,7 @@
 ### p.o.t ceremony
 
 ![tau1](https://github.com/alienflip/zku/blob/main/week_1/Screenshot%20(34).png)
+
+### Errors
+
+> remember to assign `k` in `MiMCsponge`!
