@@ -16,7 +16,7 @@
 
 ### Do we need this for a simple calculation of a merkle root?
 
-> No. However, the technology could be used inversely to search a merkle root a particular transaction. This enables bundling of data, and can speed up/make lighter a bridging verification process.
+> No. However, the technology allows for reduction of the amount of gas necessary to check if an item is in the merkle tree, by bundling of data.
 
 > [public.json](https://github.com/alienflip/zku/blob/main/week_1/public.json)
 
