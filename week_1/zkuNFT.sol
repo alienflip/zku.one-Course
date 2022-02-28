@@ -1,3 +1,4 @@
+// contracts/zkuNFT.sol
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
@@ -39,14 +40,14 @@ contract zkuNFT is ERC721URIStorage {
 
     function tokenURI(uint256 tokenId)
         public
-        pure
+        view
         override
         returns (string memory)
     {
         bytes memory dataURI = abi.encodePacked(
             '{',
                 "name:", "My721Token # ", tokenId.toString(), '"', ",",
-                "description:", "721TokenDescription #", tokenId.toString(), '"',
+                "description:", "721TokenDescription #", description, '"',
             '}'
         );
 
