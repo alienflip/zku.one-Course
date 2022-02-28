@@ -18,4 +18,6 @@
 
 > No. However, the technology could be used inversely to search a merkle root a particular transaction. This enables bundling of data, and can speed up/make lighter a bridging verification process.
 
+> [public.json](https://github.com/alienflip/zku/blob/main/week_1/public.json)
+
 # NFT
