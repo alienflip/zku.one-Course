@@ -6,6 +6,8 @@
 
 ### compiling
 
+> ./exec.sh
+
 ![tau0](https://github.com/alienflip/zku/blob/main/week_1/Screenshot%20(30).png)
 
 ### p.o.t ceremony
@@ -15,3 +17,9 @@
 ### Errors
 
 > remember to assign `k` in `MiMCsponge`!
+
+### Do we need this for a simple calculation of a merkle root?
+
+> No. However, the technology could be used inversely to search a merkle root a particular transaction. This enables bundling of data, and can speed up/make lighter a bridgig verification process.
+
+# NFT
