@@ -58,7 +58,7 @@ contract zkuNFT is ERC721URIStorage {
         uint256 tokenId, 
         string memory description
     ) 
-        public
+        public payable
         returns(bytes32)
     {
         uint256 nftID = awardItem(reciever, tokenURI_);
@@ -74,7 +74,7 @@ interface IzkuNFT {
         uint256 tokenId, 
         string memory description
     ) 
-    external 
+    external payable
     returns(bytes32);
 }
 
@@ -133,7 +133,7 @@ contract merkleTreeNFT is IzkuNFT {
         uint256 tokenId,
         string memory description
     ) 
-        public
+        public payable
         override
         returns(bytes32)
     {
@@ -149,6 +149,14 @@ contract merkleTreeNFT is IzkuNFT {
         returns(bytes32[] memory)
     {
         return merkleLeaves;
+    }
+
+    // function that points to location in memory where merkle root is
+    function getMerkleRootIndex() 
+        public view
+        returns(uint256)
+    {
+        return merkleRootIndex;
     }
     
     // hash two bytes32, return result
@@ -202,9 +210,10 @@ contract merkleTreeNFT is IzkuNFT {
             uint256 counter = depth;
             // add the new transaction
             merkleLeaves[2**treeDepth - 1 + offset] = metadata;
+            // keep track of parent
+            uint256 parent = (2**treeDepth - 1 + offset) / 2; 
             // count down layers, check to see if there are dummy leaves, add new leaves depending on this
             while(counter > 0) {
-                uint256 parent = (2**treeDepth - 1 + offset) / 2; 
                 bytes32 childLeft = merkleLeaves[2 * parent + 1];
                 bytes32 childRight = merkleLeaves[2 * parent + 2];
                 if(childRight == 0x0000000000000000000000000000000000000000000000000000000000000000){
@@ -213,6 +222,7 @@ contract merkleTreeNFT is IzkuNFT {
                 else {
                     merkleLeaves[parent] = hash(childLeft, childRight);
                 }
+                parent = parent / 2;
                 counter--;
             }
         }
