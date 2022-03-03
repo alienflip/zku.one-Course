@@ -198,8 +198,11 @@ contract merkleTreeNFT is IzkuNFT {
                     depth = depth + 1;
                 }
             }
+            // keep track of the number of layers we need to 'bubble-up'
             uint256 counter = depth;
+            // add the new transaction
             merkleLeaves[2**treeDepth - 1 + offset] = metadata;
+            // count down layers, check to see if there are dummy leaves, add new leaves depending on this
             while(counter > 0) {
                 uint256 parent = (2**treeDepth - 1 + offset) / 2; 
                 bytes32 childLeft = merkleLeaves[2 * parent + 1];

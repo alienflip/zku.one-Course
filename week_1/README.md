@@ -22,15 +22,14 @@
 
 # Minting an NFT and committing the mint data to a Merkle Tree
 
-> Using merkleTreeContract.sol
+> Using merkleTreeContract.sol,  treeHeignt : 4 layers
 
-https://github.com/SusmithKrishnan/merkle-js/blob/257ebedef94e711962b3a6f810f569f11041e72f/merkle.js#L34
-https://rosettacode.org/wiki/SHA-256_Merkle_tree
-https://github.com/bitcoin/bitcoin/blob/master/src/consensus/merkle.cpp#L46
-https://www.pranaybathini.com/2021/05/merkle-tree.html
+> > transaction 1: gas : 239094
 
-> contract deployed 
+> > transaction 2: gas : 157392
 
-> > merkleTreeContract.sol : https://ropsten.etherscan.io/address/0x337a84b230177e1b35bbdea73757098aaec85180
+![merkleTree](https://github.com/alienflip/zku/blob/main/week_1/Screenshot%20(35).png)
+
+> > merkleTreeContract.sol : 
 
 > FE application : /nft-collectible-frontend
