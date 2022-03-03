@@ -1,2 +1,1 @@
 # zku
-https://zku.one/

@@ -154,9 +154,9 @@ contract merkleTreeNFT is IzkuNFT {
     // function that points to location in memory where merkle root is
     function getMerkleRootIndex() 
         public view
-        returns(uint256)
+        returns(uint)
     {
-        return merkleRootIndex;
+        return uint(merkleRootIndex);
     }
     
     // hash two bytes32, return result

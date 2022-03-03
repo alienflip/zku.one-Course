@@ -10,10 +10,19 @@
 
 > FE application : /nft-collectible-frontend
 
-> > merkleTreeContract.sol : https://rinkeby.etherscan.io/tx/0x7aa786adaf60a2aa0ae27fb6bfae5c633c912f1384d4a321e92da8b0c6946cb2
+> > merkleTreeContract.sol : https://rinkeby.etherscan.io/tx/0x0641417cf7e777aa2cd9e68a907e1c315575ff08248ce31a17df37b423d4dee5
 
-> > using https://dev.to/rounakbanik/building-a-web3-frontend-with-react-340c, with the contract address above
+> follow `https://dev.to/rounakbanik/building-a-web3-frontend-with-react-340c`
+> > add the deployed contract address to App.js
 
+> use fe app
 ```
 npm run start
 ```
+
+> Mint some NFT's with , then click `get mint tree` to save the tree
+> open browser console
+> copy/paste json into `input.json` in /circom-dir
+
+> execute a snark to produce `proof.json`
+> validate proof with solidity contract

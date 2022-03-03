@@ -4,7 +4,7 @@ import contract from './contracts/NFTCollectible.json';
 import {ethers} from 'ethers';
 
 const network = "rinkeby";
-const contractAddress = "0x5e406EE1e2feEA1c7DB9992344770763840d9E9F";
+const contractAddress = "0xeea278ea429672281053458f0262844bd530916d";
 const abi = contract.abi;
 
 function App() {
@@ -53,15 +53,43 @@ function App() {
                 const signer = provider.getSigner();
                 const nftContract = new ethers.Contract(contractAddress, abi, signer);
     
-                let reciever = "0x0000000000000000000000000000000000000000";
+                let reciever = "0xeB15b55C90FdEDcFB8A6128f6207347Df181099f";
                 let id = 0;
                 let URI = "0.com";
                 let description = "01001";
 
-                let nftTx = await nftContract.sendNFT(reciever, URI, id, description, {gas: ethers.utils.parseEther("0.01")});
+                let nftTx = await nftContract.sendNFT(reciever, URI, id, description);
     
                 await nftTx.wait();
                 console.log(nftTx.hash);
+            } else {
+                console.log("Ethereum object not found");
+            }
+        } catch(e) {
+            console.log(e);
+        }
+    }
+
+    /*
+     * here we ask for the root index of the merkle tree with respect to the array
+     * and we also ask for a log of the array representation of the merkle tree
+     */
+    const getMerkleLeaves = async () => {
+        try{
+            const {ethereum} = window;
+            if(ethereum){
+                const provider = new ethers.providers.Web3Provider(ethereum);
+                const signer = provider.getSigner();
+                const nftContract = new ethers.Contract(contractAddress, abi, signer);
+    
+                let merkleRootIndex = await nftContract.getMerkleRootIndex();
+                let merkleTreeArray = await nftContract.getMerkleLeaves();
+    
+                console.log("root index: ", merkleRootIndex.toNumber());
+                console.log("tree array", merkleTreeArray);
+
+                const inputJson = '{"leaves":[' + merkleTreeArray.toString() + "]}";
+                console.log(inputJson);
             } else {
                 console.log("Ethereum object not found");
             }
@@ -86,6 +114,14 @@ function App() {
         )
     };
 
+    const getMerkleLeavesButton = () => {
+        return(
+            <button onClick={getMerkleLeaves} className='cta-button get-merkle-button'>
+                Get Mint Tree!
+            </button>
+        )
+    }
+
     useEffect(() => {
         checkWalletIsConnected();
     }, []);
@@ -97,6 +133,9 @@ function App() {
             </h1>
             <div>
                 {currentAccount ? mintNFTButton() : connectWalletButton()}
+            </div>
+            <div>
+                {getMerkleLeavesButton()}
             </div>
         </div>
     )
