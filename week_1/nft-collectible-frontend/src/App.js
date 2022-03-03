@@ -83,7 +83,7 @@ function App() {
                 const nftContract = new ethers.Contract(contractAddress, abi, signer);
     
                 let merkleTreeArray = await nftContract.getMerkleLeaves();
-                console.log("tree array", stringMerkleTreeArray);
+                console.log("tree array", merkleTreeArray);
             } else {
                 console.log("Ethereum object not found");
             }

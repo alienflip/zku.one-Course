@@ -11,7 +11,7 @@
 > > merkleTreeContract.sol : https://rinkeby.etherscan.io/tx/0x34bcc1dd7c484fe26f9fe7c432369f9f6886154c180e959b5efa2893db787d1d
 
 > follow `https://dev.to/rounakbanik/building-a-web3-frontend-with-react-340c`
-> > add the deployed contract address to App.js
+> > add the deployed contract address to [App.js](https://github.com/alienflip/zku/blob/main/week_1/nft-collectible-frontend/src/App.js)
 
 > use fe app
 ```
