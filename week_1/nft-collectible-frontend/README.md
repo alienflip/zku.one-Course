@@ -4,7 +4,7 @@
 > > transaction 1: gas : 239094
 > > transaction 2: gas : 157392
 
-![merkleTree](https://github.com/alienflip/zku/blob/main/week_1/nft-collectible-frontend/Screenshot%20(35).png)
+![merkleTree](https://github.com/alienflip/zku/blob/main/week_1/nft-collectible-frontend/Screenshot%20(37).png)
 
 > FE application : /nft-collectible-frontend
 > > merkleTreeContract.sol : https://rinkeby.etherscan.io/tx/0x34bcc1dd7c484fe26f9fe7c432369f9f6886154c180e959b5efa2893db787d1d
