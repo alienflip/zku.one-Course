@@ -1,4 +1,4 @@
-# Minting an NFT and committing the mint data to a Merkle Tree
+# Minting an NFT and committing the mint data to a [Merkle Tree Contract](https://github.com/alienflip/zku/blob/main/week_1/nft-collectible-frontend/merkleTreeContract.sol)
 
 > Using merkleTreeContract.sol,  treeHeignt : 4 layers
 
