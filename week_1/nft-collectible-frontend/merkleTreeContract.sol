@@ -142,7 +142,6 @@ contract merkleTreeNFT is IzkuNFT {
         return metadata;
     }
 
-        
     // function to expose the transaction data
     function getMerkleLeaves() 
         public view

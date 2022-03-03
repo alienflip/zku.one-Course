@@ -7,7 +7,7 @@
 ![merkleTree](https://github.com/alienflip/zku/blob/main/week_1/nft-collectible-frontend/Screenshot%20(35).png)
 
 > FE application : /nft-collectible-frontend
-> > merkleTreeContract.sol : https://rinkeby.etherscan.io/tx/0x0641417cf7e777aa2cd9e68a907e1c315575ff08248ce31a17df37b423d4dee5
+> > merkleTreeContract.sol : https://rinkeby.etherscan.io/tx/0x34bcc1dd7c484fe26f9fe7c432369f9f6886154c180e959b5efa2893db787d1d
 
 > follow `https://dev.to/rounakbanik/building-a-web3-frontend-with-react-340c`
 > > add the deployed contract address to App.js
