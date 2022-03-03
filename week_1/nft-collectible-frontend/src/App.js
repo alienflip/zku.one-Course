@@ -84,12 +84,13 @@ function App() {
     
                 let merkleRootIndex = await nftContract.getMerkleRootIndex();
                 let merkleTreeArray = await nftContract.getMerkleLeaves();
-    
-                console.log("root index: ", merkleRootIndex.toNumber());
-                console.log("tree array", merkleTreeArray);
+                let stringMerkleTreeArray = [];
+                for(var i = 0; i < merkleTreeArray.length; i++){
+                    stringMerkleTreeArray.push(merkleTreeArray[i].toString());
+                }
 
-                const inputJson = '{"leaves":[' + merkleTreeArray.toString() + "]}";
-                console.log(inputJson);
+                console.log("root index: ", merkleRootIndex.toNumber());
+                console.log("tree array", stringMerkleTreeArray);
             } else {
                 console.log("Ethereum object not found");
             }

@@ -49,8 +49,17 @@ snarkjs groth16 setup merkle_root.r1cs pot12_final.ptau merkle_root_0000.zkey
 ##  - encodes proof with (semi) homomorhpic function
 snarkjs zkey contribute merkle_root_0000.zkey merkle_root_0001.zkey --name="1st Contributor Name" -v
 snarkjs zkey export verificationkey merkle_root_0001.zkey verification_key.json
+snarkjs groth16 prove merkle_root_0001.zkey witness.wtns proof.json public.json
 
 ## verify proof
 ## ------------
 ##  - this is a similator which can interact with the proof, and "permute it" until a true bool is recieved
-snarkjs groth16 prove merkle_root_0001.zkey witness.wtns proof.json public.json
+
+## through circuit
+snarkjs groth16 verify verification_key.json public.json proof.json
+
+## through contract
+snarkjs zkey export solidityverifier merkle_root_0001.zkey verifier.sol
+
+## console call for verification check-by-eye
+snarkjs generatecall
