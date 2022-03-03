@@ -2,6 +2,7 @@
 
 > Using merkleTreeContract.sol,  treeHeignt : 4 layers
 > > transaction 1: gas : 225790
+
 > > transaction 2: gas : 238444
 
 ![merkleTree](https://github.com/alienflip/zku/blob/main/week_1/nft-collectible-frontend/Screenshot%20(37).png)
