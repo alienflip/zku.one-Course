@@ -82,14 +82,12 @@ function App() {
                 const signer = provider.getSigner();
                 const nftContract = new ethers.Contract(contractAddress, abi, signer);
     
-                let merkleRootIndex = await nftContract.getMerkleRootIndex();
                 let merkleTreeArray = await nftContract.getMerkleLeaves();
                 let stringMerkleTreeArray = [];
                 for(var i = 0; i < merkleTreeArray.length; i++){
                     stringMerkleTreeArray.push(merkleTreeArray[i].toString());
                 }
 
-                console.log("root index: ", merkleRootIndex.toNumber());
                 console.log("tree array", stringMerkleTreeArray);
             } else {
                 console.log("Ethereum object not found");
