@@ -29,9 +29,6 @@ function right(index) {
 /*
  * merkle_root calculator
  *  - assumes n >= 8
- *    
- *
- *
  */
 template merkle_root(n) {  
     signal input leaves[n];
