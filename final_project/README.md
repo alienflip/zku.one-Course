@@ -16,8 +16,6 @@
 
 # Install
 ```
-git clone https://github.com/alienflip/zku.git
-cd zku/final_project
 chmod 700 exec.sh
 ./exec.sh
 ```
