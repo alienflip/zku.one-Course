@@ -2,13 +2,13 @@
   ZKDeploy
 </h1>
 
-<p align="center"> The goal of this project is to create a protocol that allows anyone to deploy and interact with their NFT collection anonymously, using zero knowledge proofs </p>
+<p align="center"> </p>
 
 -----
 
 # Vision
 
->  A protocol where anyone can deploy their NFT's without doxxing their deployment address
+> 
   
 # Actionables
 

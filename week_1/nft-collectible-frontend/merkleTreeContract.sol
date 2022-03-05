@@ -103,7 +103,6 @@ contract merkleTreeNFT is IzkuNFT {
     uint256 transactionCount = 0;
 
     uint256 currPowerOfTwo = 1;
-    uint256 nextPowerOfTwo = 2;
 
     // store location of NFT smart contract, initialised to zero address
     address public zkuNFTAddress = address(0);
@@ -169,7 +168,7 @@ contract merkleTreeNFT is IzkuNFT {
 
         // handle base case, single element add to array
         if(transactionCount == 1){
-            currPowerOfTwo = 0;
+            currPowerOfTwo = 2;
             depth = 0;
             merkleRootIndex = 2**treeDepth - 1;
             merkleLeaves[2**treeDepth - 1 + offset] = metadata;
@@ -177,20 +176,22 @@ contract merkleTreeNFT is IzkuNFT {
 
         // handle simple two element merkle tree
         if(transactionCount == 2) {
-            currPowerOfTwo = 1;
+            currPowerOfTwo = 4;
             depth = 1;
             merkleRootIndex = 2**(treeDepth - 1) - 1;
             merkleLeaves[2**treeDepth - 1 + offset] = metadata;
-            uint256 parent = ((2**treeDepth - 1 + offset) - 1) / 2; 
-            merkleLeaves[parent] = hash(merkleLeaves[2 * parent + 1], merkleLeaves[2 * parent + 2]);
+            uint256 parent = ((2**treeDepth - 1 + offset) - 1) / 2;
+            bytes32 childLeft = merkleLeaves[2 * parent + 1];
+            bytes32 childRight = merkleLeaves[2 * parent + 2];
+            merkleLeaves[parent] = hash(childLeft, childRight);
         }
         
+        // generalise the above
         else{
             // if there are 2**k transactions, we increase the index of the root, until we reach its limit
-            if(transactionCount == nextPowerOfTwo){
-                currPowerOfTwo = nextPowerOfTwo;
-                nextPowerOfTwo = 2 * currPowerOfTwo;
-                if(2**depth < 2**treeDepth){
+            if(transactionCount == currPowerOfTwo){
+                currPowerOfTwo = 2 * currPowerOfTwo;
+                if(depth <= treeDepth){
                     merkleRootIndex = merkleRootIndex / 2;
                     depth = depth + 1;
                 }
@@ -200,10 +201,7 @@ contract merkleTreeNFT is IzkuNFT {
             // add the new transaction
             merkleLeaves[2**treeDepth - 1 + offset] = metadata;
             // keep track of parent
-            uint256 parent = (2**treeDepth - 1 + offset) / 2;
-            if(transactionCount % 2 == 0){
-                parent = ((2**treeDepth - 1 + offset) - 1) / 2;
-            }
+            uint256 parent = ((2**treeDepth - 1 + offset) - 1) / 2;
             // count down layers, check to see if there are dummy leaves, add new leaves depending on this
             while(counter > 0) {
                 bytes32 childLeft = merkleLeaves[2 * parent + 1];
@@ -214,7 +212,7 @@ contract merkleTreeNFT is IzkuNFT {
                 else {
                     merkleLeaves[parent] = hash(childLeft, childRight);
                 }
-                parent = parent / 2;
+                parent = (parent - 1) / 2;
                 counter--;
             }
         }
