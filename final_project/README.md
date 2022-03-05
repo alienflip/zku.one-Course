@@ -14,7 +14,7 @@
 
 -----
 
-# Install
+# Use
 ```
 chmod 700 exec.sh
 ./exec.sh

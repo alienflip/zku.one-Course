@@ -4,7 +4,7 @@ import contract from './contracts/NFTCollectible.json';
 import {ethers} from 'ethers';
 
 const network = "rinkeby";
-const contractAddress = "0xeea278ea429672281053458f0262844bd530916d";
+const contractAddress = "0x02fe92a0d0d131e9ecceadb53250010dc22f3b45";
 const abi = contract.abi;
 
 function App() {
