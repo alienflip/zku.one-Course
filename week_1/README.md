@@ -1,8 +1,8 @@
-### circom-dir
+### [circom-dir](https://github.com/alienflip/zku/tree/main/week_1/circom-dir)
 
 > contains question 1 
 
-### nft-collectible-frontend
+### [nft-collectible-frontend](https://github.com/alienflip/zku/tree/main/week_1/nft-collectible-frontend)
 
 > contains question 2
 
