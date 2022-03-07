@@ -1,10 +1,10 @@
 ### [circom-dir](https://github.com/alienflip/zku/tree/main/week_1/circom-dir)
 
-> contains question 1 
+> question 1 
 
 ### [nft-collectible-frontend](https://github.com/alienflip/zku/tree/main/week_1/nft-collectible-frontend)
 
-> contains question 2
+> question 2
 
 ### Understanding and generating ideas about ZK tech
 
