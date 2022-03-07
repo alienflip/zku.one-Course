@@ -21,6 +21,6 @@ npm run start
 > open browser console
 > > Mint some NFT's with `mint nft!`, then click `get mint tree!` to save the tree
 
-> copy/paste json from browser console into `input.json` in `/circom-dir`
-> > execute a snark to produce `proof.json`
+> copy/paste json from browser console into a `input_.json`
+> > execute a snark on `input_.json` to produce a new `proof.json`
 > > validate proof with solidity contract
