@@ -1,5 +1,7 @@
 ### Privacy & ZK VMs
 
+> question 1
+
 1.
 2.
 
@@ -18,6 +20,8 @@
 > question 3
 
 ### Thinking In ZK
+
+> question 4
 
 1.
 2.
