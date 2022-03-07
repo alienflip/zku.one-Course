@@ -23,5 +23,3 @@ chmod 700 exec.sh
 -----
 
 # Future
-
-> A privacy DAO
