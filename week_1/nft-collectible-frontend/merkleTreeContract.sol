@@ -83,9 +83,7 @@ contract merkleTreeNFT is IzkuNFT {
     // tree implimented in array as followed
     /*
                         0             <- row 2
-
                 1               2     <- row 1
-
             3       4       5       6 <- row 0
     */
 
@@ -205,9 +203,13 @@ contract merkleTreeNFT is IzkuNFT {
     }
 
     function getMerkleRootIndex()
-    public view returns(uint256){return merkleRootIndex;}
+        public view 
+        returns(uint256)
+    {
+        return merkleRootIndex;
+    }
 
-    // get the current merkle root index
+    // calculates the next root index: depends on how many powers of two the transaction count has reached
     function calculateNewRootIndex() 
         private 
     {
