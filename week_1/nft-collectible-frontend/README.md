@@ -24,3 +24,4 @@ npm run start
 > copy/paste json from browser console into a `input_.json`
 > > execute a snark on `input_.json` to produce a new `proof.json`
 > > validate proof with solidity contract
+> > > not yet implimented
