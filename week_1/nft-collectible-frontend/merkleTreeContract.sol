@@ -82,11 +82,11 @@ contract merkleTreeNFT is IzkuNFT {
 
     // tree implimented in array as followed
     /*
-                        0
+                        0             <- row 2
 
-                1               2 
+                1               2     <- row 1
 
-            3       4       5       6
+            3       4       5       6 <- row 0
     */
 
     // merkle tree with nodes, and transaction tracking variables
@@ -95,7 +95,7 @@ contract merkleTreeNFT is IzkuNFT {
     uint256 merkleRootIndex = 0;
     uint256 powerOfTwo = 1;
 
-    // depth of tree, counting from 0
+    // depth of tree, countring from 0
     uint256 treeDepth = 0;
 
     // position in base array, also the transaction count
