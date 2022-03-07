@@ -82,9 +82,9 @@ contract merkleTreeNFT is IzkuNFT {
 
     // tree implimented in array as followed
     /*
-                        0             <- row 2
-                1               2     <- row 1
-            3       4       5       6 <- row 0
+                        0                 <- row 2
+                1               2         <- row 1
+            3       4       5       6     <- row 0
     */
 
     // merkle tree with nodes, and transaction tracking variables
