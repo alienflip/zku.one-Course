@@ -9,7 +9,9 @@
 # Vision
 
 > 
-  
+
+-----
+
 # Actionables
 
 -----
