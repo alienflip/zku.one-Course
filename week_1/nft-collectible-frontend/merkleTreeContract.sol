@@ -185,7 +185,7 @@ contract merkleTreeNFT is IzkuNFT {
         /* 
          * generalise the above: the idea here is that we update the tree depending on whether the right 
          * child is a dummy or not, and then repeat the process untill we reach the 0th element
-         * (yes, this is unecessary gas wise, but easier to explain in code!)
+         * (yes, this is inefficient gas wise, but easier to explain in code!)
          */
         else{
             // add the new transaction
