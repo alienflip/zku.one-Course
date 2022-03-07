@@ -11,7 +11,7 @@
 > question 3
 
 1. The main difference between snarks and starks is the requirement for a trusted setup-of which there is none in starks. Furthermore, the main circuit languages are different: snarks->circom, starks->cairo. starks are quantum secure.
-2. how plonk trusted setup improves on groth16: `- vitalik, How we can Better Understand PLONK`
+2. How plonk trusted setup improves on groth16: `- vitalik, How we can Better Understand PLONK`
 ```
 The first improvement is that while PLONK still requires a trusted setup procedure similar to that needed for the SNARKs in Zcash, it is a "universal and updateable" trusted setup. This means two things: first, instead of there being one separate trusted setup for every program you want to prove things about, there is one single trusted setup for the whole scheme after which you can use the scheme with any program (up to some maximum size chosen when making the setup).
 
