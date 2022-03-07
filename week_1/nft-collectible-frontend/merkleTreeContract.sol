@@ -168,7 +168,11 @@ contract merkleTreeNFT is IzkuNFT {
             merkleLeaves[2**treeDepth - 1 + offset] = metadata;
         }
 
-        // handle simple two element merkle tree
+        /* 
+         * handle simple two element merkle tree, where we use the parent element index to calculate the 
+         * child indexes, and then update the parent element by hasing its children. In this case, we hash
+         * each the child, as they are not 0 elements (dummies)
+         */
         else if(transactionCount == 2) {
             merkleRootIndex = 2**(treeDepth - 1) - 1;
             merkleLeaves[2**treeDepth - 1 + offset] = metadata;
@@ -178,7 +182,11 @@ contract merkleTreeNFT is IzkuNFT {
             merkleLeaves[parent] = hash(childLeft, childRight);
         }
         
-        // generalise the above
+        /* 
+         * generalise the above: the idea here is that we update the tree depending on whether the right 
+         * child is a dummy or not, and then repeat the process untill we reach the 0th element
+         * (yes, this is unecessary gas wise, but easier to explain in code!)
+         */
         else{
             // add the new transaction
             merkleLeaves[2**treeDepth - 1 + offset] = metadata;
