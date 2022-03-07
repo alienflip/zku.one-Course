@@ -9,11 +9,11 @@
     
     2.3:
 
-### Semaphore
+### [Semaphore](https://github.com/alienflip/zku/tree/main/week_2/semaphore)
 
 > question 2
 
-### Tornado Cash
+### [TornadoCash](https://github.com/alienflip/zku/tree/main/week_2/TornadoCash)
 
 > question 3
 
