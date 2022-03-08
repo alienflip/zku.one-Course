@@ -2,8 +2,7 @@
 
 > question 1
 
-1.
-2.
+1. A blockchains state transitions to a new state through a consensus mechanism. A list of transactions are proposed by a executing node, and then the validator nodes must come to consensus as to whether to write this `block` to the chain. 
 
     2.1:
     
