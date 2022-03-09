@@ -6,6 +6,7 @@ Here is the [semaphore toolchain](http://semaphore.appliedzkp.org/docs/quick-set
 
 ```
 git clone git@github.com:appliedzkp/semaphore.git
+cd semaphore
 yarn add hardhat --dev
 yarn add @appliedzkp/semaphore-contracts
 yarn add @zk-kit/identity @zk-kit/protocols --dev
