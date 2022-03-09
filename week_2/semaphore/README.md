@@ -13,4 +13,4 @@ yarn hardhat compile
 yarn hardhat test
 ```
 
-![tests]()
+![tests](https://github.com/alienflip/zku/blob/main/week_2/semaphore/semaphore-test.PNG)
