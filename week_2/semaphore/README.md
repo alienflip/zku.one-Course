@@ -1,6 +1,8 @@
 1. Semaphore allows Ethereum users to prove their membership of a set without revealing their original identity. At the same time, it allows users to signal their endorsement of an arbitrary string. It is designed to be a simple and generic privacy layer for Ethereum DApps. Use cases include private voting, whistleblowing, mixers, and anonymous authentication.
 
-2. Here is the [semaphore toolchain](http://semaphore.appliedzkp.org/docs/quick-setup) installation:
+2.1.
+
+Here is the [semaphore toolchain](http://semaphore.appliedzkp.org/docs/quick-setup) installation:
 
 ```
 git clone git@github.com:appliedzkp/semaphore.git
@@ -14,3 +16,13 @@ yarn hardhat test
 ```
 
 ![tests](https://github.com/alienflip/zku/blob/main/week_2/semaphore/semaphore-test.PNG)
+
+2.2.
+
+    CalculateSecret() : this circuit uses the poseidon hashing algorithm twice to take somones private information and obfuscate it. For reference, see "DUSK NETWORK - POSEIDON", on google
+    
+    CalculateIdentityCommitment() : This function takes in a secret,  and once again, obfuscates it using the poseidon hash.
+    
+    CalculateNullifierHash() : 
+    
+    Semaphore() : 
