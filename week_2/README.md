@@ -12,8 +12,13 @@
         - zkSYNC: In this project, there is no graphical documentation on how the underlying VM architecture works, but the idea is that they have a turing complete machine designed and implimented. However, their github.com/matter-labs/compiler-solidity page suggests that they used LLVM to design and impliment their compiler.
     
     2.2: 
+        
+        - MidenVM: Althought this VM is very transparent, it requires that you need to learn a new language in order to deploy any solution, namely, miden assembly.
+        - zkSync: 'Although zkSync is built on some of the most cutting-edge cryptography (such as PLONK and RedShift), we were very conservative with respect to security choices made in the protocol. Every component relies exclusively on well-established cryptographic assumptions widely considered valid in the academic and professional security communities.' 
     
     2.3: 
+
+        
 
 ### [Semaphore](https://github.com/alienflip/zku/tree/main/week_2/semaphore)
 
