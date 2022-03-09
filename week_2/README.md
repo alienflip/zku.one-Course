@@ -16,9 +16,10 @@
         - MidenVM: Althought this VM is very transparent, it requires that you need to learn a new language in order to deploy any solution, namely, miden assembly.
         - zkSync: 'Although zkSync is built on some of the most cutting-edge cryptography (such as PLONK and RedShift), we were very conservative with respect to security choices made in the protocol. Every component relies exclusively on well-established cryptographic assumptions widely considered valid in the academic and professional security communities.' 
     
-    2.3: 
+    2.3: The MidenVM
 
 ![arch0](https://github.com/alienflip/zku/blob/main/week_2/arch0.jpeg)
+
 ![arch1](https://github.com/alienflip/zku/blob/main/week_2/arch1.jpeg)
         
 
