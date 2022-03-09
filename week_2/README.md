@@ -8,7 +8,7 @@
 
     2.1: 
         - [Miden VM](https://lib.rs/crates/miden#:~:text=Miden%20VM%20is%20a%20simple%20stack%20machine.%20This,%28this%20limit%20will%20be%20removed%20in%20the%20future%29.): Here there is a clear explanation of the VM: It is a stack based machine, which can `initialize`, `push` and  `read` values from the stack. It has no RAM model. Every program has a `hash()` accessor inbuilt.   
-        - [ZincVM](https://docs.zksync.io/dev/contracts/#programming-model): In this project, there is no graphical documentation on how the underlying VM architecture works, but the idea is that they have a turing complete machine designed. However, their [github](https://github.com/matter-labs/compiler-solidity) page suggests that they used LLVM to design and impliment their compiler.
+        - [ZincVM](https://docs.zksync.io/dev/contracts/#programming-model): In this project, there is no graphical documentation on how the underlying VM architecture works, but the idea is that they have a turing complete machine designed and implimented. However, their [github](https://github.com/matter-labs/compiler-solidity) page suggests that they used LLVM to design and impliment their compiler.
     
     2.2: 
     
