@@ -22,7 +22,7 @@
        
 ![arch1](https://github.com/alienflip/zku/blob/main/week_2/arch1.jpeg)
         
-        The above two diagrams are a compact way to describe the following: The miden VM architecture works is this: you write an asssembly program (MAST executed: master abstract syntax tree), this is compiled by the assembler into bytecode. The bytecode is a string of digits, each of which reference either an opcode, some constraints, some data through a location pointer, and flags. When the program is compiled into bytecode, it is then run through a turing complete machine which then returns the final state of the program as a hash. 
+        The above two diagrams are a compact way to describe the following: The miden VM architecture works is this: you write an asssembly program (MAST executed: master abstract syntax tree), this is compiled by the assembler into bytecode. The bytecode is a string of digits, each of which reference either an opcode, some constraints, some data through a location pointer, and flags. When the program is compiled into bytecode, it is then run through a turing complete machine (I/O diagram above) which then returns the final state of the program as a hash. 
 
 ### [Semaphore](https://github.com/alienflip/zku/tree/main/week_2/semaphore)
 
