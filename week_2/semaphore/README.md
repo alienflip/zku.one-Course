@@ -27,6 +27,8 @@ yarn hardhat test
     
     Semaphore() : When a user registers their identity, they simply send a hash of an EdDSA public key and two random secrets to the contract, which stores it in a Merkle tree (MT Verifier). This hash is called an identity commitment, and the random secrets are the identity nullifier and identity trapdoor. Broadcasting a signal is a little more complex. There are two parts to it: (a) anonymously proving membership of the set of registered users, and (b) preventing double-signalling via an external nullifier. This is not done in the circuit, though.
 
-3.1
+2.3. 
 
-3.2
+3.1. The elefria auth system works like this: you generate a zk identity, and submit the identity to the contract, which verifies the identity, and generates a token. You then can use the token on any other platforms you are trying to access rather than using your personal address, as long as the platforms enable validation through the elefria smart contracts. This will be their main challenge, as zk systems are hard, and most web3 devs do not know how to audit such a system.
+
+3.2. 
