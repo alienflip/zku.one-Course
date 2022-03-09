@@ -19,10 +19,12 @@
     2.3: The MidenVM
 
 ![arch0](https://github.com/alienflip/zku/blob/main/week_2/arch0.jpeg)
-       
+
+        The public inputs of a zkVM include both a program hash and a current chain-state hash. privately, the coder gives the program, the inital state, and a secret input. In the case of the zkZM, the runtime output will also include a pointer to a proof.
+        
 ![arch1](https://github.com/alienflip/zku/blob/main/week_2/arch1.jpeg)
         
-        The above two diagrams are a compact way to describe the following: The miden VM architecture works is this: you write an asssembly program (MAST executed: master abstract syntax tree), this is compiled by the assembler into bytecode. The bytecode is a string of digits, each of which reference either an opcode, some constraints, some data through a location pointer, and flags. When the program is compiled into bytecode, it is then run through a turing complete machine (I/O diagram above) which then returns the final state of the program as a hash. For more info on how a VM works, this is a great resource https://www.nand2tetris.org/.
+        The above two diagrams are a compact way to describe the following: The miden VM architecture works is this: you write an asssembly program (MAST executed: master abstract syntax tree), this is compiled by the assembler into bytecode. The bytecode is a string of digits, each of which reference either an opcode, some constraints, some data through a location pointer, and flags. When the program is compiled into bytecode, it is then run through a turing complete machine (I/O diagram above) which then returns the final state of the program as a hash. I For more info on how a VM works, this is a great resource https://www.nand2tetris.org/. 
 
 ### [Semaphore](https://github.com/alienflip/zku/tree/main/week_2/semaphore)
 
