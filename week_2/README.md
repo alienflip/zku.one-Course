@@ -18,8 +18,8 @@
     
     2.3: 
 
-[arch0](https://github.com/alienflip/zku/blob/main/week_2/arch0.jpeg)
-[arch1](https://github.com/alienflip/zku/blob/main/week_2/arch1.jpeg)
+![arch0](https://github.com/alienflip/zku/blob/main/week_2/arch0.jpeg)
+![arch1](https://github.com/alienflip/zku/blob/main/week_2/arch1.jpeg)
         
 
 ### [Semaphore](https://github.com/alienflip/zku/tree/main/week_2/semaphore)
