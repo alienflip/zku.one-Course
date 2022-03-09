@@ -29,6 +29,6 @@ yarn hardhat test
 
 2.3. 
 
-3.1. The elefria auth system works like this: you generate a zk identity, and submit the identity to the contract, which verifies the identity, and generates a token. You then can use the token on any other platforms you are trying to access rather than using your personal address, as long as the platforms enable validation through the elefria smart contracts. This will be their main challenge, as zk systems are hard, and most web3 devs do not know how to audit such a system. 
+3.1. The elefria auth system works like this: you generate a zk identity, and submit the identity to the contract, which verifies the identity, and generates a token. You then can use the token on any other platforms you are trying to access rather than using your personal address, as long as the platforms enable validation through the elefria smart contracts. This will be their main challenge, as zk systems are hard, and most web3 devs do not know how to audit such a system. In the case of private voting, it will be hard to verify that somone is a unique voter, since we still would need a more fundamental `proof of unique-person` protocol for this to work. 
 
 3.2. 
