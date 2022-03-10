@@ -26,8 +26,6 @@ Here is the tornado-nova toolchain installation
 
 ![test](https://github.com/alienflip/zku/blob/main/week_2/TornadoCash/tornado-terst.png)
 
-3.2.
-
-[custom test](https://github.com/alienflip/zku/blob/main/week_2/TornadoCash/tornado-nova/test/custom.test.js)
+3.2. [custom test](https://github.com/alienflip/zku/blob/main/week_2/TornadoCash/tornado-nova/test/custom.test.js)
 
 4.
