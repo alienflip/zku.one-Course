@@ -5,6 +5,10 @@ Tornado Nova pool will allow users to deposit & withdraw arbitrary amounts of ET
 ```
 2.1.
 
+[argsHasher](https://github.com/tornadocash/tornado-trees/blob/master/circuits/TreeUpdateArgsHasher.circom)
+
+[tornadoTrees](https://github.com/tornadocash/tornado-trees/blob/master/contracts/TornadoTrees.sol)
+
 2.2.
 
 3.1.
