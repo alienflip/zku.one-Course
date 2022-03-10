@@ -11,9 +11,7 @@ Tornado Nova pool will allow users to deposit & withdraw arbitrary amounts of ET
 
 2.2.
 
-3.1.
-
-Here is the tornado-nova toolchain installation
+3.1. Here is the tornado-nova toolchain installation, and tests
 
   ```
   git clone git@github.com:tornadocash/tornado-nova.git
