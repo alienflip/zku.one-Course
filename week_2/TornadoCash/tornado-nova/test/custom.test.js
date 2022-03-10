@@ -148,7 +148,7 @@ describe('Custom ZKU Test', function () {
       })
   
       const recipientBalance = await token.balanceOf(recipient)
-      console.log("recipient bal", recipientBalance.toString());
+      expect(recipientBalance).to.be.equal(0)
       const omniBridgeBalance = await token.balanceOf(omniBridge.address)
       expect(omniBridgeBalance).to.be.equal(aliceWithdrawAmount)
       const tornadoPoolBal = await token.balanceOf(tornadoPool.address)
