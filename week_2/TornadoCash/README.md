@@ -8,7 +8,7 @@ Tornado Nova pool will allow users to deposit & withdraw arbitrary amounts of ET
 2.1. 
 
 ```
-To update the withdrawal tree, the two files below are used together. The tornado tree contract is mainly serving two functions: it has a deposits merkle tree, and a withdrawal merkle tree. It uses these trees to validate whether or not a particular user has a who has sent a withdrawal request has an account with the correct amount of funds. This is done with a zk proof, so that the user does not have to releal their identity. In the contract, all inputs and outputs are public, so we rely on the zk proof to obfuscate the private input data. 
+To update the withdrawal tree, the two files below are used together. The tornado tree contract is mainly serving two functions: it has a deposits merkle tree, and a withdrawal merkle tree. It uses these trees to validate whether or not a particular user has a who has sent a withdrawal request has an account with the correct amount of funds. This is done with a zk proof, so that the user does not have to releal their identity. In the contract, all inputs and outputs are public, so we rely on the zk proof to obfuscate the private input and output data. 
 ```
 ```
 The circom file ... 
