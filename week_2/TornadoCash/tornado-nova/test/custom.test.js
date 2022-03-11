@@ -86,12 +86,11 @@ describe('Custom ZKU Test', function () {
 
   describe('zku q3.2.2', () => {
     it('should print gas estimate, deposit eth, withdraw eth, and assert balances are correct', async () => {
+      const { tornadoPool, token, omniBridge, merkleTreeWithHistory } = await loadFixture(fixture)
       
       /*
        * estimate gas of addling leaves to merkle tree
        */
-      
-      const { tornadoPool, token, omniBridge, merkleTreeWithHistory } = await loadFixture(fixture)
 
       const L1 = toFixedHex(1);
       const L2 = toFixedHex(2);
