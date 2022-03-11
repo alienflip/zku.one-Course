@@ -28,4 +28,4 @@ Tornado Nova pool will allow users to deposit & withdraw arbitrary amounts of ET
 
 3.2. [custom test](https://github.com/alienflip/zku/blob/main/week_2/TornadoCash/tornado-nova/test/custom.test.js) 
 
-4. ---
+4. --
