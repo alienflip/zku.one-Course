@@ -40,4 +40,4 @@
 
 1. I would ask them how they went about gaining the crypto-public trust. How is it that even though the moment of trust is required, people still use these products? Surely the user who know enough to use these zk products, also knows the trust issue in the setup phase! Basically, I would just be interested to hear about their take on the psychology aspect of the adoption of the zk products out there.
 
-2.
+2. --
