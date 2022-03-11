@@ -5,7 +5,7 @@ const { expect } = require('chai')
 const { toFixedHex } = require('../src/utils')
 
 const Utxo = require('../src/utxo')
-const { transaction, registerAndTransact, prepareTransaction } = require('../src/index')
+const { transaction, prepareTransaction } = require('../src/index')
 const { Keypair } = require('../src/keypair')
 const { encodeDataForBridge } = require('./utils')
 const { utils } = ethers
@@ -26,6 +26,9 @@ describe('Custom ZKU Test', function () {
 
   async function fixture() {
     require('../scripts/compileHasher')
+
+    // merkle tree mechanism
+
     const hasher = await deploy('Hasher')
     const merkleTreeWithHistory = await deploy(
       'MerkleTreeWithHistoryMock',
@@ -33,15 +36,12 @@ describe('Custom ZKU Test', function () {
       hasher.address,
     )
     await merkleTreeWithHistory.initialize()
-    return { hasher, merkleTreeWithHistory }
-  }
 
-  async function fixture_() {
-    require('../scripts/compileHasher')
+    // l1-l2 bridge mechanism
+
     const [sender, gov, l1Unwrapper, multisig] = await ethers.getSigners()
     const verifier2 = await deploy('Verifier2')
     const verifier16 = await deploy('Verifier16')
-    const hasher = await deploy('Hasher')
 
     const token = await deploy('PermittableToken', 'Wrapped ETH', 'WETH', 18, l1ChainId)
     await token.mint(sender.address, utils.parseEther('10000'))
@@ -81,17 +81,17 @@ describe('Custom ZKU Test', function () {
 
     await token.approve(tornadoPool.address, utils.parseEther('10000'))
 
-    return { tornadoPool, token, proxy, omniBridge, amb, gov, multisig }
+    return { tornadoPool, token, proxy, omniBridge, amb, gov, multisig, hasher, merkleTreeWithHistory }
   }
 
-  describe('zku #q3.2.2', () => {
-    it('should print gas estimate, deposit eth, withdraw eth, assert balances are correct', async () => {
+  describe('zku q3.2.2', () => {
+    it('should print gas estimate, deposit eth, withdraw eth, and assert balances are correct', async () => {
       
       /*
        * estimate gas of addling leaves to merkle tree
        */
       
-      const { merkleTreeWithHistory } = await loadFixture(fixture)
+      const { tornadoPool, token, omniBridge, merkleTreeWithHistory } = await loadFixture(fixture)
 
       const L1 = toFixedHex(1);
       const L2 = toFixedHex(2);
@@ -102,7 +102,6 @@ describe('Custom ZKU Test', function () {
        * bridge tokens from l1 to l2
        */
 
-      const { tornadoPool, token, omniBridge } = await loadFixture(fixture_)
       const aliceKeypair = new Keypair() // contains private and public keys
   
       // Alice deposits into tornado pool

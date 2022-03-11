@@ -19,7 +19,6 @@ Tornado Nova pool will allow users to deposit & withdraw arbitrary amounts of ET
   git clone git@github.com:tornadocash/tornado-nova.git
   cd tornado-nova
   yarn
-  yarn download
   yarn build
   yarn test
   ```
