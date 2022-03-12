@@ -45,6 +45,11 @@ A ZK-VM, at its core, is a trans-compiler, along with a program execution engine
 
 > question 4
 
-1. I would ask them how they went about gaining the crypto-public trust. How is it that even though the moment of trust is required, people still use these products? Surely the user who know enough to use these zk products, also knows the trust issue in the setup phase! Basically, I would just be interested to hear about their take on the psychology aspect of the adoption of the zk products out there.
+1. If you have a chance to meet with the people who built Tornado Cash & Semaphore, what questions would you ask them about their protocols?
+```
+I would ask them how they went about gaining the crypto-public trust. How is it that even though the moment of trust is required, people still use these products? Surely the user who know enough to use these zk products, also knows the trust issue in the setup phase! Basically, I would just be interested to hear about their take on the psychology aspect of the adoption of the zk products out there.
+```
 
-2. --
+2. Regarding writing and maintaining circuits for each dapp separately, what are your thoughts about using just one circuit for all dapps? Is that even possible?  What is likely to be a standard in the future for developing Zk dapps?
+```
+```
