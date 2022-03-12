@@ -1,9 +1,0 @@
-{
-  "packages": [
-    "config",
-    "contracts",
-    "frontend"
-  ],
-  "version": "0.0.1",
-  "npmClient": "npm"
-}
