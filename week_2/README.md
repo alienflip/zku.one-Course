@@ -2,21 +2,28 @@
 
 > question 1
 
-1. A blockchains state transitions to a new state through a consensus mechanism. A list of transactions are proposed by a executing node, and then the validator nodes must come to consensus as to whether to write this `block` to the chain. 
+1. Explain in brief, how does the existing blockchain state transition to a new state? What is the advantage of using zk based verification over re-execution for state transition?
+```
+A blockchains state transitions to a new state through a consensus mechanism. A list of transactions are proposed by a executing node, and then the validator nodes must come to consensus as to whether to write this `block` to the chain. 
+```
+2. Explain in brief what is a ZK VM (virtual machine) and how it works?
+```
+A ZK-VM, at its core, is a trans-compiler, along with a program execution engine. In the wider blockchain community, people do not want to have to understand how to program circuits, or why they should, they just want to make their solidity contracts and iterate fast. A ZK-VM allows for this abstraction layer. As far as I can tell, these are the only two sort-of-transparent projects which are using zk-vm's. [Miden VM](https://lib.rs/crates/miden#:~:text=Miden%20VM%20is%20a%20simple%20stack%20machine.%20This,%28this%20limit%20will%20be%20removed%20in%20the%20future%29.) and [zkSYNC](https://docs.zksync.io/dev/contracts/#programming-model).
+```
 
-2. A ZK-VM, at its core, is a trans-compiler, along with a program execution engine. In the wider blockchain community, people do not want to have to understand how to program circuits, or why they should, they just want to make their solidity contracts and iterate fast. A ZK-VM allows for this abstraction layer. As far as I can tell, these are the only two sort-of-transparent projects which are using zk-vm's. [Miden VM](https://lib.rs/crates/miden#:~:text=Miden%20VM%20is%20a%20simple%20stack%20machine.%20This,%28this%20limit%20will%20be%20removed%20in%20the%20future%29.) and [zkSYNC](https://docs.zksync.io/dev/contracts/#programming-model).
-
-    2.1: 
+   2.1: Give examples of certain projects building Zk VMs (at-least 2-3 projects). Describe in brief, key differences in their VMs.
     
         - MidenVM : Here there is a clear explanation of the VM: It is a stack based machine, which can `initialize`, `push` and  `read` values from the stack. It has no RAM model. Every program has a `hash()` accessor inbuilt.   
         - zkSYNC: In this project, there is no graphical documentation on how the underlying VM architecture works, but the idea is that they have a turing complete machine designed and implimented. However, their github.com/matter-labs/compiler-solidity page suggests that they used LLVM to design and impliment their compiler.
     
-    2.2: 
+   2.2: What are the advantages and disadvantages of some of the existing Zk VMs?
         
         - MidenVM: Althought this VM is very transparent, it requires that you need to learn a new language in order to deploy any solution, namely, miden assembly.
         - zkSync: 'Although zkSync is built on some of the most cutting-edge cryptography (such as PLONK and RedShift), we were very conservative with respect to security choices made in the protocol. Every component relies exclusively on well-established cryptographic assumptions widely considered valid in the academic and professional security communities.' 
     
-    2.3: The MidenVM
+   2.3:  Explain in detail one of the Zk VM architectures using diagrams.
+   
+   > The MidenVM
 
 ![arch0](https://github.com/alienflip/zku/blob/main/week_2/arch0.jpeg)
 
