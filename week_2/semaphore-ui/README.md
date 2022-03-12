@@ -12,12 +12,15 @@ npm i
 ### secret key
 
 > copy your private key into `.env`, make sure it is a harmony funded address
+
 ```
 touch .env
 source .env
 ```
 
 ### deploy 
+
+> here we deploy the verifier from week 1 to harmony testnet
 
 ```
 npx hardhat run scripts/deploy.js --network harmony
@@ -32,8 +35,17 @@ cd interactTS
 npm i
 ```
 
+### secret key
+
+> copy your private key into `.env`, make sure it is a harmony funded address
+
+```
+touch .env
+source .env
+```
+
 ### verify proof
 
 ```
-node inputProof.ts 
+npx ts-node veriftProof.ts
 ```

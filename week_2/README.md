@@ -37,7 +37,7 @@ A ZK-VM, at its core, is a trans-compiler, along with a program execution engine
 
 > question 2
 
-> bonus [semaphore-ui](https://github.com/alienflip/zku/tree/main/week_2/semaphore-ui) ... unfinished :(
+> bonus [semaphore-ui](https://github.com/alienflip/zku/tree/main/week_2/semaphore-ui) 
 
 ### [TornadoCash](https://github.com/alienflip/zku/tree/main/week_2/TornadoCash)
 
