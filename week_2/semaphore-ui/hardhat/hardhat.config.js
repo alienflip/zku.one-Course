@@ -1,6 +1,7 @@
 require("@nomiclabs/hardhat-waffle");
 
-let key = process.env.sk;
+const fs = require('fs');
+const key = fs.readFileSync(".env").toString().trim();
 
 module.exports = {
   solidity: "0.8.12",
