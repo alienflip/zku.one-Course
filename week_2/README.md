@@ -52,4 +52,5 @@ I would ask them how they went about gaining the crypto-public trust. How is it 
 
 2. Regarding writing and maintaining circuits for each dapp separately, what are your thoughts about using just one circuit for all dapps? Is that even possible?  What is likely to be a standard in the future for developing Zk dapps?
 ```
+This seems like a quesiton for the ZKVM people who are working on creating a general purpose compiler using LLVM at zkSync! I think the idea is to compile any solidity code into zk-circuits, and then all dapps will be natively compiled and deployed as zk secure. 
 ```
