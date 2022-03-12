@@ -32,7 +32,7 @@ yarn hardhat test
     
     Semaphore() : When a user registers their identity, they simply send a hash of an EdDSA public key and two random secrets to the contract, which stores it in a Merkle tree (MT Verifier). This hash is called an identity commitment, and the random secrets are the identity nullifier and identity trapdoor. Broadcasting a signal is a little more complex. There are two parts to it: (a) anonymously proving membership of the set of registered users, and (b) preventing double-signalling via an external nullifier. This is not done in the circuit, though.
 
-2.3. Create a frontend for the current semaphore version. You can use this as reference.
+2.3. Create a frontend for the current semaphore version. 
 
 [frontend for semaphore]()
 
