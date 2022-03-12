@@ -53,4 +53,9 @@ Conclusion : since all we want to do in TreeUpdateArgsHasher is to concatenate v
 4. Read Proposal #11 of Tornado.cash governance, what is the purpose of the newly deployed L1Unwrapper contract?
 
 ```
+The problem is that the 2nd layer blockchain platofrm gnosis have fun out of liqidity to sponsor the contract for updating the merkle tree wihdraw functionality.
+```
+> https://etherscan.io/address/0x3F615bA21Bc6Cc5D4a6D798c5950cc5c42937fbd#code
+```
+The solution proposed to allow users to pay for l1 fees themselves
 ```
