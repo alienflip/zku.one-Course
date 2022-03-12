@@ -34,7 +34,7 @@ yarn hardhat test
 
 2.3. Create a frontend for the current semaphore version. 
 
-[frontend for semaphore]()
+`in directory above`
 
 3.1. What potential challenges are there to overcome in such an authentication system?
 ```
