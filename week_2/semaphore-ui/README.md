@@ -17,7 +17,7 @@ touch .env
 source .env
 ```
 
-### deploy basic contract
+### deploy 
 
 ```
 npx hardhat run scripts/deploy.js --network harmony
