@@ -24,14 +24,16 @@ The circom file is all about compression:  all arguments that are passed to the 
 Poseidon : https://www.usenix.org/system/files/sec21summer_grassi.pdf
 `
 ```
+This is a cryptographic function specifically designed for merkle tree interaction.
 ```
 `
 SHA256 : https://www.intel.com/content/dam/www/public/us/en/documents/white-papers/sha-256-implementations-paper.pdf
 `
 ```
+This is a general-use cryptographic function designed for general data. 
 ```
 ```
-Conclusion:
+Conclusion : since all we want to do in TreeUpdateArgsHasher is to concatenate various inputs, we should go with the general use crypographic function, as it is better optimised.
 ```
 
 3.1. Run the tests in tornado-trees and add a screenshot of all the tests passing.
