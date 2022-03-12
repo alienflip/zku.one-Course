@@ -41,5 +41,5 @@ yarn hardhat test
 3.2. What potential improvements can one make to simplify the Elefria authentication protocol?
 
 ```
-
+I would add methods for browsing between options in the frontend without having to reset the whole app.
 ```
