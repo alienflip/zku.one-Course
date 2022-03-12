@@ -11,7 +11,7 @@ npm i
 
 ### secret key
 
-> copy your private key into `.env`
+> copy your private key into `.env`, make sure it is a harmony funded address
 ```
 touch .env
 source .env
