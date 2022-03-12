@@ -20,6 +20,16 @@ The circom file is all about compression:  all arguments that are passed to the 
 
 2.2. Why do you think we use the SHA256 hash here instead of the Poseidon hash used elsewhere?
 
+```
+Poseidon : https://www.usenix.org/system/files/sec21summer_grassi.pdf
+```
+```
+SHA256 : https://www.intel.com/content/dam/www/public/us/en/documents/white-papers/sha-256-implementations-paper.pdf
+```
+```
+Conclusion:
+```
+
 3.1. Run the tests in tornado-trees and add a screenshot of all the tests passing.
 
   ```
