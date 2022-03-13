@@ -35,8 +35,9 @@ npm i
 ```
 npx hardhat run scripts/anonDeploy.js --network harmony
 ```
-
-> now your contract is deployed to `addressContract.txt`, and you can delete `.env_private` to maintain anonymity
+> now your burner private key is deployed to `.env_private`
+> 
+> now your contract is deployed to `addressContract.txt`
 
 ------------
 
