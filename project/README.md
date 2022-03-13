@@ -22,3 +22,22 @@ npm i
 ```
 
 ------------
+
+## Use
+
+```
+cd contract-deployment-app
+```
+
+> add your contract to the `contracts` folder
+
+> add your public wallet details to the `.env`
+ 
+```
+chmod 700 exec.sh
+./exec.sh
+```
+
+> now your contract is deployed, and you have a new wallet aswell, whose details are in `newWallet.txt`
+
+------------
