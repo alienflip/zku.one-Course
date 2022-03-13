@@ -1,0 +1,8 @@
+zero-knowledge contract deployer
+    - clone tornado.cash, deploy dummy to test-net
+    - develop custom application on tornado.cash
+        - user inputs their desired anon contract
+        - user inputs public wallet private key
+        - application creates private burner wallet private key
+        - application then funds the private burner wallet with tornado.cash
+        - application deploys the contract using the private wallet
