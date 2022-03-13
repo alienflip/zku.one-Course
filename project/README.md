@@ -19,23 +19,24 @@
 
 ## Install and Use
 
+> add your contract to the `contracts` folder
+
+> add your public wallet details to the `.env_pub`
+
 ### install
 
 ```
-cd contract-deployment-app
+cd app
 npm i
 ```
 
 ### use 
 
 ```
-cd contract-deployment-app
+npx hardhat run scripts/anonDeploy.js --network harmony
 ```
 
-> add your contract to the `contracts` folder
 
-> add your public wallet details to the `.env`
- 
 ```
 chmod 700 exec.sh
 ./exec.sh
