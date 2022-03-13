@@ -13,7 +13,7 @@
 <p align="center">🍄 In this app, we deploy a contract as an anon to the harmony testnet, using zero knowledge proofs 🍄</p>
 
 > Protocol 
-> > The application will create a burner account, and then use a zero-knowledge mixer in order to deploy a contract anonymously by funding the new wallet with funds, using the mixer, and then deploying your contract with the new wallet
+> > The application will create a burner account, and then use a zero-knowledge mixer in order to fund the burner wallet, then deploy your contract anonymously with the new wallet
 
 ------------
 
