@@ -17,17 +17,7 @@
 ## Installation
 
 ```
-cd circuit-development
-npm i
-```
-
-```
-cd contract-deployment
-npm i
-```
-
-```
-cd frontend
+cd contract-deployment-app
 npm i
 ```
 
