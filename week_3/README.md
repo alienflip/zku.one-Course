@@ -1,4 +1,4 @@
-### [Dark Forest]()
+### [Dark Forest](https://github.com/alienflip/zku/tree/main/week_3/darkForest)
 
 > question 1
 
@@ -46,7 +46,7 @@
 ```
 ```
 
-### [InterRep]()
+### [InterRep](https://github.com/alienflip/zku/tree/main/week_3/interRep)
 
 > question 4
 
