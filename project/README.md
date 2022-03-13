@@ -4,11 +4,12 @@
 </h1>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/node-v0.8.12-orange"></img>
-  <img src="https://img.shields.io/badge/solidity-v0.8.12-orange"></img>
-  <img src="https://img.shields.io/badge/circom-v0.8.12-orange"></img>
+  <img src="https://img.shields.io/badge/node-v16.14.0-orange"></img>
+  <img src="https://img.shields.io/badge/circom-v2.0.3-blue"></img>
   <img src="https://img.shields.io/badge/rust-v0.8.12-orange"></img>
-  <img src="https://img.shields.io/badge/truffle-v0.8.12-orange"></img>
+  <img src="https://img.shields.io/badge/snarksjs-v0.4.15-blue"></img>
+  <img src="https://img.shields.io/badge/solidity-v0.8.12-orange"></img>
+  <img src="https://img.shields.io/badge/truffle-v5.5.4-green"></img>
 </p>
 
 <p align="center">🍄 In this app, we deploy a contract as an anon to the harmony testnet, using zero knowledge proofs 🍄</p>
