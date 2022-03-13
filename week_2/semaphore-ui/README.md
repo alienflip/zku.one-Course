@@ -1,6 +1,6 @@
 > went a bit off-pieced here ... realised I needed to learn typescript to do the assignment! So will re-hash an earlier assignment, but in typescript
 
-## deploy contract
+# deploy contract
 
 ### install hardhat
 
@@ -26,7 +26,7 @@ source .env
 npx hardhat run scripts/deploy.js --network harmony
 ```
 
-## interact with contract
+# interact with contract
 
 ### install deps
 
