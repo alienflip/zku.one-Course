@@ -19,9 +19,10 @@
 
 ## Install and Use
 
-> add your contract to the `contracts` folder
+> put contracts in the `contracts` folder
 
-> add your public wallet private key to the `.env_pub`
+> add public wallet private key to the `.env_pub`
+> > note : public wallet must be funded with testnet ONE
 
 ### install
 
@@ -35,9 +36,9 @@ npm i
 ```
 npx hardhat run scripts/anonDeploy.js --network harmony
 ```
-> now your burner private key is deployed to `.env_private`
+> burner private key is deployed to `.env_private`
 > 
-> now your contract is deployed to `addressContract.txt`
+> contract is deployed to `addressContract.txt`
 
 ------------
 
