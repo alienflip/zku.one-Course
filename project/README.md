@@ -5,7 +5,6 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/solidity-v0.8.12-orange"></img>
-  <img src="https://img.shields.io/badge/circom-v0.8.12-orange"></img>
 </p>
 
 <p align="center">🍄 In this app, we deploy a contract as an anon, using zero knowledge proofs 🍄</p>
