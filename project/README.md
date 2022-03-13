@@ -20,16 +20,16 @@
 
 ------------
 
-## Installation
+## Install and Use
+
+### install
 
 ```
 cd contract-deployment-app
 npm i
 ```
 
-------------
-
-## Use
+### use 
 
 ```
 cd contract-deployment-app
