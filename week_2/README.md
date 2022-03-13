@@ -4,7 +4,7 @@
 
 1. Explain in brief, how does the existing blockchain state transition to a new state? What is the advantage of using zk based verification over re-execution for state transition?
 ```
-A blockchains state transitions to a new state through a consensus mechanism. A list of transactions are proposed by a executing node, and then the validator nodes must come to consensus as to whether to write this `block` to the chain. 
+A blockchains state transitions to a new state through a consensus mechanism. A list of transactions are proposed by a executing node, and then the validator nodes must come to consensus as to whether to write this `block` to the chain. Essentially, this duplicated checking of validity is a problem: it causes lack of privacy, high latency, compute restriction and massive persistent data loads. A zk blockchain could fix this: ZKP is a cryptographic technology with two interesting properties — zero knowledge and succinctness. On one hand, you can use it to prove that you know a secret without revealing any knowledge about that secret. On the other hand, you can verify a large and complex computation is done correctly
 ```
 2. Explain in brief what is a ZK VM (virtual machine) and how it works?
 ```
