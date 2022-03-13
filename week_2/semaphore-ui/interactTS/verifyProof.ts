@@ -4,6 +4,11 @@ import Web3 from 'web3';
 import { Contract } from 'web3-eth-contract';
 import { SignedTransaction } from 'web3-core';
 
+async function getSecretSey() {
+    const key = fs_.readFileSync(".env").toString().trim();
+    return key;
+}
+
 async function getVerifierAddress() {
     const addressRaw:Buffer = await fs.readFile("../hardhat/addressVerifier.txt"); 
     return addressRaw.toString();
@@ -28,10 +33,6 @@ async function getPublicJson() {
     return JSON.parse(jsonString);
 }
 
-async function getSecretSey() {
-    const key = fs_.readFileSync(".env").toString().trim();
-    return key;
-}
 
 async function getTX(web3:Web3, transaction:any, key:string) {
     const signedTx:SignedTransaction = await web3.eth.accounts.signTransaction(
@@ -64,24 +65,23 @@ async function execTransaction(address:string, gas:number, abiData:any, web3:Web
 
 async function exec(){
     try{
+        const key:string = await getSecretSey();
         const addressValidator:string = await getVerifierAddress();
         const abi:any = await getVerifierABI();
-        const key:string = await getSecretSey();
+        const proofJSON:any = await getProofJson();
+        const publicJSON:any = await getPublicJson();
 
         const web3 = new Web3('https://api.s0.b.hmny.io');
         const hmyMasterAccount = web3.eth.accounts.privateKeyToAccount(key);
+        
         web3.eth.accounts.wallet.add(hmyMasterAccount);
-
         web3.eth.defaultAccount = hmyMasterAccount.address
 
         const contract:Contract = new web3.eth.Contract(
             abi,
             addressValidator
         );
-
-        const proofJSON:any = await getProofJson();
-        const publicJSON:any = await getPublicJson();
-
+        
         const methodABI:any = contract.methods.verifyProof(
             [proofJSON.pi_a[0], proofJSON.pi_a[1]],
             [proofJSON.pi_b[0], proofJSON.pi_b[1]],
@@ -92,9 +92,7 @@ async function exec(){
         await execTransaction(addressValidator, 30000, methodABI, web3, key);
 
         process.exit();
-    }
-
-    catch(e){
+    } catch(e) {
         console.log(e);
     }
 
