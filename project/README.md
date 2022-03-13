@@ -21,7 +21,7 @@
 
 > add your contract to the `contracts` folder
 
-> add your public wallet details to the `.env_pub`
+> add your public wallet private key to the `.env_pub`
 
 ### install
 
@@ -36,12 +36,8 @@ npm i
 npx hardhat run scripts/anonDeploy.js --network harmony
 ```
 
-
-```
-chmod 700 exec.sh
-./exec.sh
-```
-
-> now your contract is deployed, and you have a new wallet aswell, whose details are in `newWallet.txt`
+> now your contract is deployed to `addressContract.txt`, and you can delete `.env_private` to maintain anonymity
 
 ------------
+
+> note: tornado implimentation cloned from https://github.com/webb-tools/tornado-core
