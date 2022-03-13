@@ -41,4 +41,4 @@ npx hardhat run scripts/anonDeploy.js --network harmony
 
 ------------
 
-> note: tornado implimentation cloned from https://github.com/webb-tools/tornado-core
+> note: `tornado-core` implimentation cloned from https://github.com/webb-tools/tornado-core
