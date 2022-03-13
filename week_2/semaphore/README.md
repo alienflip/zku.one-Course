@@ -24,7 +24,7 @@ yarn hardhat test
 
 2.2. Explain code in the sempahore.circom file (including public, private inputs).
 
-    nullifier : When a user registers their identity, they simply send a hash of an EdDSA public key and two random secrets to the contract, which stores it in a Merkle tree. This hash is called an identity commitment, and the random secrets are the identity nullifier and identity trapdoor.
+    identity/nullifier/trapdoor : When a user registers their identity, they simply send a hash of an EdDSA public key and two random secrets to the contract, which stores it in a Merkle tree. This hash is called an identity commitment, and the random secrets are the identity nullifier and identity trapdoor.
 
     CalculateSecret() : this circuit uses the poseidon hashing algorithm twice to take somones private information and obfuscate it. For reference, see "DUSK NETWORK - POSEIDON", on google
     
