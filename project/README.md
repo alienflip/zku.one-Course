@@ -5,12 +5,9 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/node-v16.14.0-orange"></img>
+  <img src="https://img.shields.io/badge/npm-v8.3.1-pink"></img>
   <img src="https://img.shields.io/badge/circom-v2.0.3-blue"></img>
   <img src="https://img.shields.io/badge/rust-v1.59.0-green"></img>
-  <img src="https://img.shields.io/badge/typescript-v4.6.2-green"></img>
-  <img src="https://img.shields.io/badge/snarksjs-v0.4.15-yellow"></img>
-  <img src="https://img.shields.io/badge/solidity-v0.8.12-orange"></img>
-  <img src="https://img.shields.io/badge/truffle-v5.5.4-green"></img>
 </p>
 
 <p align="center">🍄 In this app, we deploy a contract as an anon to the harmony testnet, using zero knowledge proofs 🍄</p>
