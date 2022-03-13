@@ -11,7 +11,7 @@
 <p align="center">🍄 In this app, we deploy a contract as an anon, using zero knowledge proofs 🍄</p>
 
 > Protocol 
-> > The application will create a burner account, and then use a zero-knowledge mixer in order to deploy a contract by funding the new wallet with funds, using the mixer.
+> > The application will create a burner account, and then use a zero-knowledge mixer in order to deploy a contract anonymously by funding the new wallet with funds, using the mixer.
 
 ------------
 
