@@ -5,26 +5,46 @@
 ### Fairness in card games
 
 1.
+```
+```
 
 2.
+```
+```
 
 3.
+```
+```
 
 ### MACI and VDF
 
 1.
+```
+```
 
 2.
+```
+```
 
 2.1.
+```
+```
 
 2.2.
+```
+```
 
 2.3.
+```
+```
 
 2.4.
+```
+```
 
 3.
+```
+```
 
 ### [InterRep]()
 
@@ -34,6 +54,5 @@
 
 1. If you have a chance to meet with the people who built DarkForest and InterRep, what questions would you ask them about their protocols?
 ```
-
 ```
 
