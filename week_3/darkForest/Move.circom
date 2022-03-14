@@ -35,6 +35,8 @@ template Move () {
     signal input b[2];
     signal input c[2];
     signal output out;
+    
+    out <== 0;
 
     // make sure the move is on a triangle
     assert(isTriangle(a[0], a[1], b[0], b[1], c[0], c[1]));
