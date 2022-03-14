@@ -35,7 +35,6 @@ template Move () {
     signal input b[2];
     signal input c[2];
     signal output out;
-    
     out <== 0;
 
     // make sure the move is on a triangle
