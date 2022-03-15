@@ -20,7 +20,7 @@ colour ∈ {0, k}, k ∈ naturals
 suite ∈ {4k, 4k + 1, 4k + 2, 4k + 3}, k ∈ naturals 
 ```
 ```
-we then hash each number, colur and suite, and concatenate. Then hash again. This would create a large enough random enumeration for a secure game.
+we then hash each number, colur and suite, and concatenate. Then hash again. This would create a large enough random enumeration for a secure game. If we use a nice cypher.
 ```
 
 2.
