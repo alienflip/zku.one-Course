@@ -12,6 +12,16 @@ To prevent players from changing the card we need to store some commitment on-ch
 ```
 A simple solution for this would be to apply a cypher to the card triples: (number, colour, suite), where 0 < number < 14, colour in (r, b), suite in (c, s, d, h).
 ```
+```
+We can create a mapping (number, colour, suite) so that
+
+number ∈ {14k, 14k + 1 ... 14k + 13}, k ∈ naturals
+colour ∈ {0, k}, k ∈ naturals
+suite ∈ {4k, 4k + 1, 4k + 2, 4k + 3}, k ∈ naturals 
+```
+```
+we then hash each number, colur and suite, and concatenate. Then hash again. This would create a large enough random enumeration for a secure game.
+```
 
 2.
 ```
