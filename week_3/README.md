@@ -6,10 +6,6 @@
 
 > question 2
 
-3.
-```
-```
-
 ### MACI and VDF
 
 > question 3
