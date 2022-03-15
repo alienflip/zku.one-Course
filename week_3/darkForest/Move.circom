@@ -56,4 +56,4 @@ template Move () {
     out <== 1;
 }
 
-component main { public [ a, b, c ] } = Move();
+component main { } = Move();
