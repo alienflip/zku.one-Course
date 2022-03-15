@@ -10,7 +10,7 @@
 To prevent players from changing the card we need to store some commitment on-chain. How would you design this commitment? Assume each player has a single card that needs to be kept secret.  Modify the naive protocol so that brute force doesn’t work.
 
 ```
-A simple solution for this would be to apply a cypher to the card triples: (number, colour, suite), where 0 < number < 14.
+A simple solution for this would be to apply a cypher to the card triples: (number, colour, suite), where 0 < number < 14, colour in (r, b), suite in (c, s, d, h).
 ```
 
 2.
