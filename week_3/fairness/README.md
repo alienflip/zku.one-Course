@@ -17,7 +17,8 @@ we then hash each number, colur and suite, and concatenate. Then hash again. Thi
 
 2. Now assume that the player needs to pick another card from the same suite. Design a circuit that can prove that the newly picked card is in the same suite as the previous one. Can the previous state be spoofed? If so, what mechanism is needed in the contracts to verify this?
 Design a contract, necessary circuits, and verifiers to achieve this. You may need to come up with an appropriate representation of cards as integers such that the above operations can be done easily.
-[circuits/verifier/contracts]()
+
+[circuits/verifier/contracts](https://github.com/alienflip/zku/tree/main/week_3/fairness/2ndCard)
 
 ```
 ```
