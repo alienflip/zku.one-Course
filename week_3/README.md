@@ -23,7 +23,8 @@ suite ∈ {4k, 4k + 1, 4k + 2, 4k + 3}, k ∈ naturals
 we then hash each number, colur and suite, and concatenate. Then hash again. This would create a large enough random enumeration for a secure game. If we use a nice cypher.
 ```
 
-2.
+2. Now assume that the player needs to pick another card from the same suite. Design a circuit that can prove that the newly picked card is in the same suite as the previous one. Can the previous state be spoofed? If so, what mechanism is needed in the contracts to verify this?
+Design a contract, necessary circuits, and verifiers to achieve this. You may need to come up with an appropriate representation of cards as integers such that the above operations can be done easily.
 ```
 ```
 
