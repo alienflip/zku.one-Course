@@ -8,7 +8,6 @@ A simple solution for this would be to apply a cypher to the card triples: (numb
 We can create a mapping (number, colour, suite) so that
 
 number ∈ {14k, 14k + 1 ... 14k + 13}, k ∈ naturals
-colour ∈ {2k, 2k + 1}, k ∈ naturals
 suite ∈ {4k, 4k + 1, 4k + 2, 4k + 3}, k ∈ naturals 
 ```
 ```
