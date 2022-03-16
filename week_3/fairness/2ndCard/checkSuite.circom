@@ -2,16 +2,28 @@ pragma circom 2.0.3;
 
 include "circomlib/poseidon.circom";
 
-template checkSuite () {
-    signal input card0[3];
-    signal input card1[3];
+template suiteVerify () {
+    // user provides the old card commitment
+    // public
+    signal input oldCardSuite;
 
-    component hash = Poseidon(2);
+    // user provies new card commitment
+    // private
+    signal input newCardSuite;
 
-    var hash0;
-    var hash1;
+    // output
+    signal output boolOut;
 
-    assert(hash0 == hash1);
+    assert(newCardSuite == oldCardSuite);
+
+    boolOut <== 1;
 }
 
-component main = checkSuite();
+component main { public [ oldCardSuite ] } = suiteVerify();
+
+// have a large enough sample space for `number`
+// similar for s % 4, and `suite`
+/* INPUT = {
+    "oldCardSuite": "5",
+    "NewCardsuite": "2"
+} */
