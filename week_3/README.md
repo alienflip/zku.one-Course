@@ -2,7 +2,7 @@
 
 > question 1
 
-### [Fairness in card games](https://github.com/alienflip/zku/new/main/week_3/fairness)
+### [Fairness in card games](https://github.com/alienflip/zku/tree/main/week_3/fairness)
 
 > question 2
 
