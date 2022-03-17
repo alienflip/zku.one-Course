@@ -20,7 +20,7 @@ MACI does not solve the problem of network takeover. If a single person wants to
 [random contract](https://github.com/alienflip/zku/blob/main/week_3/randomDice.sol)
 
 ```
-Wirth only solidity, the pseudo-random-dice roll can take a users random input, make sure it is a large number, and then hash it with the current block hash with keccack256 to find a pseudo random hash.
+With only solidity, the pseudo-random-dice roll can take a users random input, make sure it is a large number, and then hash it with the current block hash with keccack256 to find a pseudo random hash.
 ```
 
 2.1. What are the issues with this approach?
@@ -28,6 +28,7 @@ Wirth only solidity, the pseudo-random-dice roll can take a users random input, 
 [multi-party random contract](https://github.com/alienflip/zku/blob/main/week_3/randomMultiDice.sol)
 
 ```
+Here, we instantiate a group of people as members allowed to add a random number, then we take all their random numbers, and hash them together with the block hash, and then use keccack256 on the output.
 ```
 
 2.2. How would you design a multi party system that performs a dice roll?
