@@ -1,6 +1,6 @@
 pragma solidity ^0.8.12;
 
-import "./Verifier.sol";
+import "circom/verifier.sol";
 
 contract cardGame {
 
