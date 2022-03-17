@@ -7,6 +7,6 @@ contract randomDice {
     returns(bytes32)
   {
     bytes32 block = block.hash;
-    return keccak256(abi.encodePacked(block, randomNumber)) == answer;
+    return keccak256(abi.encodePacked(block, randomNumber));
   }
 }
