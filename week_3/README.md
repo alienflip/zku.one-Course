@@ -26,7 +26,7 @@ With only solidity, the pseudo-random-dice roll can take a users random input, m
 2.1. What are the issues with this approach?
 
 ```
-
+This approach is super weak! Somone could man-in-the-middle the input number and then "predict" the outcom 100%.
 ```
 
 2.2. How would you design a multi party system that performs a dice roll?
