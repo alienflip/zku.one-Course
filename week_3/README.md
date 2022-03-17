@@ -10,27 +10,27 @@
 
 > question 3
 
-1.
+1. What problems in voting does MACI not solve? What are some potential solutions?
 ```
 ```
 
-2.
+2. How can a pseudorandom dice roll be simulated using just Solidity?
 ```
 ```
 
-2.1.
+2.1. What are the issues with this approach?
 ```
 ```
 
-2.2.
+2.2. How would you design a multi party system that performs a dice roll?
 ```
 ```
 
-2.3.
+2.3. Compare both techniques and explain which one is fairer and why.
 ```
 ```
 
-2.4.
+2.4. Show how the multi party system is still vulnerable to manipulation by malicious parties and then elaborate on the use of VDF’s in solving this.
 ```
 ```
 
