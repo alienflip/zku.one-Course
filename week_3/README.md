@@ -12,10 +12,15 @@
 
 1. What problems in voting does MACI not solve? What are some potential solutions?
 ```
+MACI does not solve the problem of network takeover. If a single person wants to impliment a 51% attack, they can still generate enough nodes to take over a network and flood it with many votes that they know are biased to one descision. A quick solution to this is, unfortunately, KYC. In the long-term, it is a problem that could be solved with proof of identity: one-person-one-vote.
 ```
 
 2. How can a pseudorandom dice roll be simulated using just Solidity?
+
+[contract](https://github.com/alienflip/zku/blob/main/week_3/randomDice.sol)
+
 ```
+Wirth only solidity, the pseudo-random-dice
 ```
 
 2.1. What are the issues with this approach?
