@@ -25,14 +25,16 @@ With only solidity, the pseudo-random-dice roll can take a users random input, m
 
 2.1. What are the issues with this approach?
 
+```
+
+```
+
+2.2. How would you design a multi party system that performs a dice roll?
+
 [multi-party random contract](https://github.com/alienflip/zku/blob/main/week_3/randomMultiDice.sol)
 
 ```
 Here, we instantiate a group of people as members allowed to add a random number, then we take all their random numbers, and hash them together with the block hash, and then use keccack256 on the output.
-```
-
-2.2. How would you design a multi party system that performs a dice roll?
-```
 ```
 
 2.3. Compare both techniques and explain which one is fairer and why.
