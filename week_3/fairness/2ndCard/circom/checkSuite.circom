@@ -1,31 +1,32 @@
 pragma circom 2.0.3;
 
-include "circomlib/circuits/poseidon.circom";
+include "circomlib/circuits/mimcsponge.circom";
 
 template suiteVerify () {
-    // user provides the old card commitment
-    // public
-    signal input oldCardSuite;
-
     // user provies new card commitment
+    // note, newCard can be any integer, as long as 
+    // newCard % 13 resolves to the correct "base number" 
+    // in the range [0, 13]
     // private
+    signal input newCard;
     signal input newCardSuite;
 
-    // output
-    signal output boolOut;
+    // outputs: card number hash
+    // public
+    signal output cardHash;
+    signal output cardSuite;
 
-    component hash = Poseidon(2);
-    hash.inputs[0] <== oldCardSuite;
-    hash.inputs[1] <== newCardSuite;
+    // hash the card twice
+    component hash0 = MiMCSponge(2, 0, 1);
+    hash0.ins[0] <== newCard;
+    hash0.ins[1] <== newCardSuite;
 
-    boolOut <== hash.out;
+    component hash1 = MiMCSponge(1, 0, 1);
+    hash1.ins[0] <== hash0.outs[0];
+
+    // output the card and the suite
+    cardHash <== hash1.outs[0];
+    cardSuite <== newCardSuite % 4;
 }
 
 component main = suiteVerify();
-
-// have a large enough sample space for `number`
-// similar for s % 4, and `suite`
-/* INPUT = {
-    "oldCardSuite": 5,
-    "NewCardsuite": 2
-} */
