@@ -39,10 +39,16 @@ Here, we instantiate a group of people as members allowed to add a random number
 
 2.3. Compare both techniques and explain which one is fairer and why.
 ```
+The first approach is far less fair, as the randomness is entrusted to a single persons "input" data, rather than a groups input.
 ```
 
 2.4. Show how the multi party system is still vulnerable to manipulation by malicious parties and then elaborate on the use of VDF’s in solving this.
 ```
+The multi-party system here can be manipulated if all the members of the generation group all collude at once.
+```
+```
+How Does A VDF solve this?
+
 ```
 
 3.
