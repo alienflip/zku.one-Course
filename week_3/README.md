@@ -17,13 +17,16 @@ MACI does not solve the problem of network takeover. If a single person wants to
 
 2. How can a pseudorandom dice roll be simulated using just Solidity?
 
-[contract](https://github.com/alienflip/zku/blob/main/week_3/randomDice.sol)
+[random contract](https://github.com/alienflip/zku/blob/main/week_3/randomDice.sol)
 
 ```
 Wirth only solidity, the pseudo-random-dice roll can take a users random input, make sure it is a large number, and then hash it with the current block hash with keccack256 to find a pseudo random hash.
 ```
 
 2.1. What are the issues with this approach?
+
+[multi-party random contract](https://github.com/alienflip/zku/blob/main/week_3/randomMultiDice.sol)
+
 ```
 ```
 
