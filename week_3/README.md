@@ -47,8 +47,7 @@ The first approach is far less fair, as the randomness is entrusted to a single 
 The multi-party system here can be manipulated if all the members of the generation group all collude at once.
 ```
 ```
-How Does A VDF solve this?
-
+A verifiable delay function (VDF) is a function whose evaluation requires running a given number of sequential steps, yet the result can be efficiently verified. 
 ```
 
 3.
