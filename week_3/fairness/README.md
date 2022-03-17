@@ -21,9 +21,6 @@ Design a contract, necessary circuits, and verifiers to achieve this. You may ne
 [circuits](https://github.com/alienflip/zku/blob/main/week_3/fairness/2ndCard/circom/checkSuite.circom)
 [contracts](https://github.com/alienflip/zku/blob/main/week_3/fairness/2ndCard/storeCards.sol)
 
-```
-```
-
 3.
 
 ```
