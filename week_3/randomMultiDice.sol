@@ -27,5 +27,6 @@ contract randomMultiDice {
     if(memberCallCount == maxMembers){
       return keccak256(abi.encodePacked(hash, block));
     }
+    membersVoteCount[msg.sender]++;
   }
 }
