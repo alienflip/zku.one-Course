@@ -30,7 +30,7 @@ contract cardGame {
         newProof._c = _c;
         newProof._input = _input;
         lastCards.push(newProof);
-        require(Verifier.verifyCompareSuite(newProof, lastCard[cardCount - 1]), "Failed compare check");
+        require(Verifier.verify(_a, _b, _c, _input), "Failed compare check");
         return true;
   }
 }
