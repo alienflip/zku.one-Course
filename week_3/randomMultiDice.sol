@@ -20,13 +20,10 @@ contract randomMultiDice {
     external
     returns(bytes32)
   {
-  
     require(membersVoteCount[msg.sender] == 0);
     require(randomNumber > 100000, "not random enough");
-    
     bytes32 block = block.hash;
     hash = abi.encodePacked(hash, randomNumber);
-    
     if(memberCallCount == maxMembers){
       return keccak256(abi.encodePacked(hash, block));
     }
