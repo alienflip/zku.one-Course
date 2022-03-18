@@ -64,6 +64,9 @@ VDF  stands for Verifiable Delay Function and is (as the name says) a Function t
 Takes T steps to evaluate even with unbounded parallelism
 The output can be verified efficiently
 ```
+This is how a VDF solves the previous contracts problem:
+![oldContract]()
+![VDF]()
 3.
 ```
 ```
