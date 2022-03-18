@@ -65,8 +65,8 @@ Takes T steps to evaluate even with unbounded parallelism
 The output can be verified efficiently
 ```
 This is how a VDF solves the previous contracts problem:
-![oldContract]()
-![VDF]()
+![oldContract](https://github.com/alienflip/zku/blob/main/week_3/oldContract.png)
+![VDF](https://github.com/alienflip/zku/blob/main/week_3/VDF.png)
 3.
 ```
 ```
