@@ -27,6 +27,27 @@ function isTriangle(a0, a1, b0, b1, c0, c1) {
         assert(a1 != c1);
     }
 
+    if(a1 == b1){
+        assert(a0 != b0);
+        assert(c1 != a1); 
+        assert(c0 != a0); 
+        assert(c0 != b0);
+    }
+
+    if(a1 == c1){
+        assert(a0 != c0);
+        assert(b1 != a1);
+        assert(b0 != c0);
+        assert(b0 != a0);
+    }
+
+    if(b1 == c1){
+        assert(b0 != c0);
+        assert(a1 != b1);
+        assert(a0 != b0);
+        assert(a0 != c0);
+    }   
+
     return 1;
 }
 
