@@ -47,9 +47,17 @@ The first approach is far less fair, as the randomness is entrusted to a single 
 The multi-party system here can be manipulated if all the members of the generation group all collude at once.
 ```
 ```
-A verifiable delay function (VDF) is a function whose evaluation requires running a given number of sequential steps, yet the result can be efficiently verified. 
+A verifiable delay function (VDF) is a function whose evaluation requires running a given number of sequential steps, yet the result can be efficiently verified. It works like this: 
 ```
-
+```
+Random Value: s = c^((p+1)/4) mod p
+```
+```
+Verify Randomness: c = s^2
+```
+```
+Compute the modular square root is pretty simple but sequential and the running time is logarithmically bigger a p grows. From the other end the verification is immediate. All this comes with a caveat: it turns out that the computation phase is actually parallelizable.
+```
 3.
 ```
 ```
