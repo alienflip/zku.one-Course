@@ -56,7 +56,13 @@ Random Value: s = c^((p+1)/4) mod p
 Verify Randomness: c = s^2
 ```
 ```
-Compute the modular square root is pretty simple but sequential and the running time is logarithmically bigger a p grows. From the other end the verification is immediate. All this comes with a caveat: it turns out that the computation phase is actually parallelizable.
+Compute the modular square root is pretty simple but sequential and the running time is logarithmically bigger a p grows. 
+From the other end the verification is immediate. All this comes with a caveat: it turns out that the computation phase is actually parallelizable.
+```
+```
+VDF  stands for Verifiable Delay Function and is (as the name says) a Function that:
+Takes T steps to evaluate even with unbounded parallelism
+The output can be verified efficiently
 ```
 3.
 ```
