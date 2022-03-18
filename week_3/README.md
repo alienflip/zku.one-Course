@@ -64,13 +64,23 @@ VDF  stands for Verifiable Delay Function and is (as the name says) a Function t
 Takes T steps to evaluate even with unbounded parallelism
 The output can be verified efficiently
 ```
+
 > previous contracts problem:
+
 ![oldContract](https://github.com/alienflip/zku/blob/main/week_3/oldContract.png)
+
 ```
 Here, Zoe has the advantage
 ```
+
 > VDF contract:
+
 ![VDF](https://github.com/alienflip/zku/blob/main/week_3/VDF.png)
+
+```
+Here, no one has the advantage
+```
+
 3.
 ```
 ```
