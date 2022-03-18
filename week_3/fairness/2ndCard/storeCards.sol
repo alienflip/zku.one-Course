@@ -23,6 +23,7 @@ contract cardGame {
   cardProof prevCard;
 
   // here, we take the new card and old card, and verify that they are of the same suite
+  // test
   function verifyNewCompare(
     uint256[2] memory _a,
     uint256[2][2] memory _b,
