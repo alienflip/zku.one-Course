@@ -8,8 +8,6 @@ Interep provides special groups that can be used by DApps or services to verify 
 
 [contracts deployed to ropsten](https://github.com/alienflip/zku/blob/main/week_3/interRep/contracts/contracts.json)
 
-![join github group]()
-
 ```
 When you leave a group, the database prunes the corresponding leaf from the merkle tree which it stores your commitment on.
 ```
