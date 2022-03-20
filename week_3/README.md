@@ -81,8 +81,9 @@ Here, Zoe has the advantage
 Here, no one has the advantage
 ```
 
-3.
+3. How would two players pick a random and mutually exclusive subsets of a set? For instance, in a poker game, how would two players decide on a hand through the exchange of messages on a blockchain?
 ```
+
 ```
 
 ### [InterRep](https://github.com/alienflip/zku/tree/main/week_3/interRep)
