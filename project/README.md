@@ -31,6 +31,9 @@
 ```
 cd app
 npm i
+cd deployer
+npm i
+cd app/deployer
 ```
 
 ### use 

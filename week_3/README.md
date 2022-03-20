@@ -83,7 +83,8 @@ Here, no one has the advantage
 
 3. How would two players pick a random and mutually exclusive subsets of a set? For instance, in a poker game, how would two players decide on a hand through the exchange of messages on a blockchain?
 ```
-
+If the total number of cards is n, and we want to pick a subset of size k, then each player should pick 2*k cards each using a VDF.
+We then can go one card by one, and pick the first k distinct cards. Since there are 2*k cards, we can be sure there are enough distinct cards, so that whe we pick the first k distinct cards, we will have a random subset of size k.
 ```
 
 ### [InterRep](https://github.com/alienflip/zku/tree/main/week_3/interRep)
