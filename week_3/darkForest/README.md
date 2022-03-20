@@ -4,7 +4,6 @@
 
 2. Make a Solidity contract and a verifier that accepts a snark proof and updates the location state of players stored in the contract. 
 
-[contract]()
+[location contract](https://github.com/alienflip/zku/blob/main/week_3/darkForest/locationCheck.sol)
 
-[verifier]()
-
+[verifier](https://github.com/alienflip/zku/blob/main/week_3/darkForest/circom/verifier.sol)
