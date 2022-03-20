@@ -20,5 +20,5 @@ When you leave a group, the database prunes the corresponding leaf from the merk
 4. Suggest a viable solution to make InterRep completely decentralized.
 
 ```
-Inter-rep need to make a decentralised bridge. They could do with with middleware relayer nodes who pass messages to eachother and come to consensus on the seen transaction. multi-sigs on each side can verify that the trasaction is made securely.
+Inter-rep need to make a decentralised bridge. They could do with with middleware relayer nodes who pass messages to eachother and come to consensus on the seen transaction. multi-sigs on each side can verify that the trasaction is made securely. ZKP could be used to batch transactions.
 ```
