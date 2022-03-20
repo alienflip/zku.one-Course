@@ -21,7 +21,8 @@ Design a contract, necessary circuits, and verifiers to achieve this. You may ne
 [circuits](https://github.com/alienflip/zku/blob/main/week_3/fairness/2ndCard/circom/checkSuite.circom)
 [contracts](https://github.com/alienflip/zku/blob/main/week_3/fairness/2ndCard/storeCards.sol)
 
-3.
+3. How can a player reveal that it is a particular card (Say ace) without revealing which suit it belongs to (ace of diamonds etc.)
 
 ```
+For this, we can change the mappings in the storeCards.sol file so that we group by number instead of suite.
 ```
