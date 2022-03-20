@@ -1,9 +1,9 @@
 <h1 align="center">Tornado Core</h1>
 
 <p align="center">
-    <strong>Tornado Core Functionality 🌪️</strong>
-    <br />
-    <sub>Mixers (Anchors) for the EVM</sub>
+  <strong>Tornado Core Functionality 🌪️</strong>
+  <br />
+  <sub>Mixers (Anchors) for the EVM</sub>
 </p>
 
 <br />

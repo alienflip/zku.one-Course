@@ -14,9 +14,6 @@ When you leave a group, the database prunes the corresponding leaf from the merk
 
 [leave group](https://github.com/alienflip/zku/blob/main/week_3/interRep/reputation-service/src/core/groups/mts/deleteLeaf.ts)
 
-
-3.
-
 4. Suggest a viable solution to make InterRep completely decentralized.
 
 ```
