@@ -14,14 +14,3 @@ When you leave a group, the database prunes the corresponding leaf from the merk
 
 [leave group](https://github.com/alienflip/zku/blob/main/week_3/interRep/reputation-service/src/core/groups/mts/deleteLeaf.ts)
 
-3. Use the public API (instead of calling the Kovan testnet, call your localhost) to query the status of your own identityCommitment in any of the social groups supported by InterRep before and after you leave the group. Take the screenshots of the responses and paste them to your assignment submission PDF.
-
-![before]()
-
-![after]()
-
-4. [Bonus] Suggest a viable solution to make InterRep completely decentralized.
-
-```
-
-```
