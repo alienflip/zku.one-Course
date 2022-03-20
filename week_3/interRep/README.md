@@ -1,7 +1,7 @@
 1. How does InterRep use Semaphore in their implementation? Explain why InterRep still needs a centralized server.
 
 ```
-Interep provides special groups that can be used by DApps or services to verify users' reputations without exposing their identities. In order to join groups each user must create a unique identifier using an Ethereum account and Semaphore. Semaphore, then, allows users to prove that their identifier is part of a specific group. Their approach sacrifices some decentralization to gain more privacy.
+Interep provides special groups that can be used by DApps or services to verify users' reputations without exposing their identities. In order to join groups each user must create a unique identifier using an Ethereum account and Semaphore. Semaphore, then, allows users to prove that their identifier is part of a specific group. Their approach sacrifices some decentralization to gain more privacy, since they use a centralised bridge.
 ```
 
 2. Clone the InterRep repos: contracts and reputation-service. Follow the instructions on the Github repos to start the development environment. Try to join one of the groups, and then leave the group. Explain what happens to the Merkle Tree in the MongoDB instance when you decide to leave a group. 
@@ -14,3 +14,11 @@ When you leave a group, the database prunes the corresponding leaf from the merk
 
 [leave group](https://github.com/alienflip/zku/blob/main/week_3/interRep/reputation-service/src/core/groups/mts/deleteLeaf.ts)
 
+
+3.
+
+4. Suggest a viable solution to make InterRep completely decentralized.
+
+```
+Inter-rep need to make a decentralised bridge. They could do with with middleware relayer nodes who pass messages to eachother and come to consensus on the seen transaction. multi-sigs on each side can verify that the trasaction is made securely.
+```
