@@ -17,10 +17,8 @@ const privateKey = process.env.PRIVATE_KEY;
 
 const wallet = new ethers.Wallet(privateKey, provider);
 const anchorAbi = require("../build/contracts/Anchor.json");
-const run = require('./depositNativeAnchor');
 
 async function generateMerkleProof(deposit, contractAddress) {
-const anchorInstance = new ethers.Contract(contractAddress, anchorAbi.abi, wallet);
   const events = await getDepositEvents(contractAddress);
   const leaves = events
     .sort((a, b) => a.args.leafIndex - b.args.leafIndex) // Sort events in chronological order
@@ -74,6 +72,7 @@ async function generateSnarkProof(deposit, recipient, contractAddress) {
 }
 
 async function withdraw(noteString, recipient, contractAddress) {
+  const anchorInstance = new ethers.Contract(contractAddress, anchorAbi.abi, wallet);
   const deposit = parseNote(noteString);
   const {proof, args} = await generateSnarkProof(deposit, recipient, contractAddress);
   const logs = await anchorInstance.withdraw(proof, ...args, { from: (await wallet.getAddress()) })

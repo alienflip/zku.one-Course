@@ -8,7 +8,7 @@ module.exports = {
   networks: {
     harmony: {
       url: `https://api.s0.b.hmny.io`,
-      accounts: [`0x${key}`]
+      accounts: [`${key}`]
     }
   },
 };
