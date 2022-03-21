@@ -31,6 +31,11 @@
 ```
 cd app
 npm i
+```
+
+> optionally deploy your own contract here
+
+```
 cd deployer
 npm i
 cd app/deployer
