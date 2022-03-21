@@ -98,5 +98,7 @@ We then can go one card by one, and pick the first k distinct cards. Since there
 1. If you have a chance to meet with the people who built DarkForest and InterRep, what questions would you ask them about their protocols?
 
 ```
+For sure I would ask darkForest if they will make a 3d mmo! This is something that would be cool to have a zk component for! 
+For interep, I would ask them if they will please start to work on proof of humanity! They have all the right tools.
 ```
 
