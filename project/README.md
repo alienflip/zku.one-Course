@@ -5,7 +5,7 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/node-v16.14.0-orange"></img>
-  <img src="https://img.shields.io/badge/npm-v8.3.1-pink"></img>
+  <img src="https://img.shields.io/badge/npm-v8.3.1-green"></img>
 </p>
 
 <p align="center">🍄 In this app, we deploy a contract as an anon to the harmony testnet, using zero knowledge proofs 🍄</p>
