@@ -2,8 +2,6 @@
 
 <p align="center">
   <strong>Tornado Core Functionality 🌪️</strong>
-  <br />
-  <sub>Mixers (Anchors) for the EVM</sub>
 </p>
 
 <br />
