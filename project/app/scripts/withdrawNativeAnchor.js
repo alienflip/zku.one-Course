@@ -14,7 +14,7 @@ const toHex = (number, length = 32) =>
   '0x' + (number instanceof Buffer ? number.toString('hex') : bigInt(number).toString(16)).padStart(length * 2, '0');
 
 const provider = new ethers.providers.JsonRpcProvider(`${process.env.ENDPOINT}`);
-const privateKey = fs_.readFileSync("../deployer/.env_private").toString().trim();
+ const privateKey = fs_.readFileSync("../deployer/.env_private").toString().trim();
 
 const wallet = new ethers.Wallet(privateKey, provider);
 const anchorAbi = require("../build/contracts/Anchor.json");
