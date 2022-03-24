@@ -47,7 +47,8 @@
 Project 0: AnonDeploy. In this zk privacy project, the developer can deploy a contract anonymously through a burner wallet and mixer. Privacy is important for DAO members, adn the DAOs deployer should also be able to be anonymous.
 ```
 ```
-Project 1: MMORPG zero knowledge random drop system. In this system, the dungeon boss drops an item with a random VDF function, and then the winner of the item is also picked with a VDF. All of the raid are given an item with a mixer, but the winner of the best gear is kept secret with a zkp. This idea will maybe help the next generation of game-fi :).
+Project 1: MMORPG zero knowledge random drop system. In this system, the dungeon boss drops an item with a random VDF function calculating the probability, and then the winner of the item is also picked with a VDF. All of the raid are given an item with a mixer, winners of the best gear is kept secret with a zkp. 
+Why is this cool? Well, no need for jealousy in guilds anymore. Everyone is equally ignorant. :).
 ```
 
 2. Compare the pros and cons of the ideas, and try to make a strong case for each project. Describe some shortcomings including feasibility given the time frame and existence of competing products, as well as how you may be able to address these shortcomings.
