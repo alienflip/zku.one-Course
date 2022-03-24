@@ -1,3 +1,6 @@
+## Which stream?
+
+0. I will choose stream B.
 
 ## Scaling the future
 
