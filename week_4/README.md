@@ -44,11 +44,19 @@
 1. Describe 2-3 different, independent ideas for your final project. For each, describe the idea in about 150 words, explaining which aspect of ZK you are capitalizing on (privacy, succinctness, or fairness), and why this may be a timely product for the market. See the advice below for guidance and inspiration.
 
 ```
+Project 0: AnonDeploy. In this zk privacy project, the developer can deploy a contract anonymously through a burner wallet and mixer. Privacy is important for DAO members, adn the DAOs deployer should also be able to be anonymous.
+```
+```
+Project 1: MMORPG zero knowledge random drop system. In this system, the dungeon boss drops an item with a random VDF function, and then the winner of the item is also picked with a VDF. All of the raid are given an item with a mixer, but the winner of the best gear is kept secret with a zkp. This idea will maybe help the next generation of game-fi :).
 ```
 
 2. Compare the pros and cons of the ideas, and try to make a strong case for each project. Describe some shortcomings including feasibility given the time frame and existence of competing products, as well as how you may be able to address these shortcomings.
 
 ```
+Project 0 pros: can be made quickly and with a fork of tornado cash so the audit will be small and cheap. cons: it is not super innovative. Cons addressed by potentially creating an awesome frontend.
+```
+```
+Project 1: pros: innovative and exciting! cons: large project with many aspects required to link into it, so large audit. Cons addressed by commmiting much time to the project.
 ```
 
 ## Thinking in ZK
