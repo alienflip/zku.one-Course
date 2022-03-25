@@ -25,6 +25,7 @@
 3. ZKSync 2.0 was recently launched to testnet and has introduced ZKPorter. Argue for or against ZKPorter, highlighting the advantages or shortcomings in this new protocol.
 
 ```
+
 ```
 
 ## Recursive SNARK’s
