@@ -7,9 +7,30 @@
 1. Based on the above, a number of solutions have been proposed to solve this trilemma. Briefly describe the different scalability solutions and write pros and cons of each approach. What was the biggest problem with the Plasma approach?
 
 ```
+Solution: sharding
+
+pros:
+
+Cons:
+```
+```
+Solution: rollups
+
+pros:
+
+Cons:
+```
+```
+Solution: sidechains
+
+pros:
+
+Cons:
 ```
 
 2. One of the solutions that has been gaining a lot of traction lately is zkRollups. With the use of a diagram explain the key features of zkRollups. Argue for or against this solution highlighting its benefits or shortcomings with respect to other solutions proposed or in use.
+
+![zkRollups]()
 
 ```
 ```
@@ -26,6 +47,18 @@
 
 ```
 What does zkPorter solve? Well, it allows for large scale network scalability on an exponential scale, and also allows for composability of applications and protocols.
+```
+
+```
+zkPorter separates the concerns of state validity and data availability. State validity — that the transition from one state to the next is always valid — is uniformly enforced by means of zero-knowledge proofs, which offer exponential scalability while inheriting the security guarantees of the underlying L1. In contrast, data availability is delegated to individual shards, which are free to experiment with different solutions. In necessariis unitas, in dubiis libertas!
+```
+
+```
+On the other hand, zk-based scaling cannot directly solve is the data availability problem: if the state data becomes unavailable, funds are frozen. zkRollup and Validium handle the data availability problem in different ways.
+```
+
+```
+At some point, somone will make the descision to abstract out of zkPorter's shard 0, at which point, they take security, cost and throughput into their own hands.
 ```
 
 ## Recursive SNARK’s
