@@ -52,6 +52,7 @@ Relies on one or more operators to store data and serve it upon request.
 ![zkRollups]()
 
 ```
+So, what are ZK-Rollups doing that is so valuable? Basically, they allow for quicker and cheaper transactions. They can scale the Ethereum network as a result of being able to process hundreds of transfers off-chain, rolling them up into one transaction and then sending a validity proof known as a SNARK back to the main chain as authentication. Instantly verifiable, SNARKS can dramatically reduce transaction fees, while significantly improving throughput and scalability.
 ```
 
 3. Ethereum is a state machine that moves forward with each new block. At any instance, it provides a complete state of Ethereum consisting of the data related to all accounts and smart contracts running on the EVM. The state of Ethereum modifies whenever a transaction is added to the block by changing the balances of accounts. Based on the massive adoption of Ethereum across the globe, this state has become a bottleneck for validators trying to sync with the network as well as validate transactions. Briefly describe the concept of stateless client, and how they help resolve this issue? Explain how Zero-Knowledge improves on the concept of stateless client?
