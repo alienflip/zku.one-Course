@@ -49,7 +49,7 @@ Relies on one or more operators to store data and serve it upon request.
 
 2. One of the solutions that has been gaining a lot of traction lately is zkRollups. With the use of a diagram explain the key features of zkRollups. Argue for or against this solution highlighting its benefits or shortcomings with respect to other solutions proposed or in use.
 
-![zkRollups]()
+![zkRollups](https://github.com/alienflip/zku/blob/main/week_4/Hash_Tree.svg.png)
 
 ```
 So, what are ZK-Rollups doing that is so valuable? Basically, they allow for quicker and cheaper transactions. They can scale the Ethereum network as a result of being able to process hundreds of transfers off-chain, rolling them up into one transaction and then sending a validity proof known as a SNARK back to the main chain as authentication. Instantly verifiable, SNARKS can dramatically reduce transaction fees, while significantly improving throughput and scalability.
