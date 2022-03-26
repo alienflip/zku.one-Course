@@ -49,16 +49,35 @@ Relies on one or more operators to store data and serve it upon request.
 
 2. One of the solutions that has been gaining a lot of traction lately is zkRollups. With the use of a diagram explain the key features of zkRollups. Argue for or against this solution highlighting its benefits or shortcomings with respect to other solutions proposed or in use.
 
+[zkr article](https://medium.com/fcats-blockchain-incubator/how-zk-rollups-work-8ac4d7155b0e)
+
 ![zkRollups](https://github.com/alienflip/zku/blob/main/week_4/Hash_Tree.svg.png)
 
 ```
 So, what are ZK-Rollups doing that is so valuable? Basically, they allow for quicker and cheaper transactions. They can scale the Ethereum network as a result of being able to process hundreds of transfers off-chain, rolling them up into one transaction and then sending a validity proof known as a SNARK back to the main chain as authentication. Instantly verifiable, SNARKS can dramatically reduce transaction fees, while significantly improving throughput and scalability.
 ```
 
-![rollupTransition]()
+![rollupTransition](https://github.com/alienflip/zku/blob/main/week_4/transitionrollups.png)
 
 ```
-How does a zkRollup work? Well, anyone can take state from a recent block, and then submit a new state to the 
+How does a zkRollup work? 
+
+A snark checks the following
+
+The transaction is correct and corresponds to the depositor’s public key.
+The depositor’s account exists in the balance tree.
+The amount being transferred is not greater than the depositor’s balance.
+The receiver account exists in the balance tree.
+Both the sender account and receiver account are of the same token type.
+The sender’s nonce is correct.
+There are no overflows / underflows etc.
+
+Once it checks out, it’s added to the queue. Once a number of transactions are in the queue, the coordinator will decide to create a batch. 
+To do this, the coordinator compiles a bunch of inputs for the zk-proof circuit to compile into a proof. This involves:
+
+Creating a merkle tree of all the transactions in the batch, which is padded with dummy transactions up to the size required by the circuit, and each with a merkle proof.
+Creating a collection of merkle proofs for each sender and receiver from all transactions in order to prove account existence.
+Creating a collection of intermediate roots which are derived from updating the balance tree root after updating the sender and receiver accounts in each transaction.
 ```
 
 3. Ethereum is a state machine that moves forward with each new block. At any instance, it provides a complete state of Ethereum consisting of the data related to all accounts and smart contracts running on the EVM. The state of Ethereum modifies whenever a transaction is added to the block by changing the balances of accounts. Based on the massive adoption of Ethereum across the globe, this state has become a bottleneck for validators trying to sync with the network as well as validate transactions. Briefly describe the concept of stateless client, and how they help resolve this issue? Explain how Zero-Knowledge improves on the concept of stateless client?
