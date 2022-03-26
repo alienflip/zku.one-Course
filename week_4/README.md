@@ -11,8 +11,10 @@ Solution: sharding
 This is the process of splitting infrastructure into smaller pieces in an attempt to scale a network.
 
 pros:
+Sharding could make running full nodes easier.
 
 Cons:
+Piece one needs to be able to know the data coming from the other five nodes is correct. Otherwise it could be tricked into thinking a change was made that didn't really occur.
 ```
 ```
 Solution: rollups
@@ -33,6 +35,14 @@ Supports general computation, EVM compatibility. Established technology.
 
 Cons:
 Less decentralized. Uses a separate consensus mechanism. Not secured by layer 1 (so technically it’s not layer 2).
+```
+
+```
+plasma: 
+A plasma chain is a separate blockchain that is anchored to the main Ethereum chain, and uses fraud proofs (like optimistic rollups) to arbitrate disputes.
+
+challenges:
+Does not support general computation. Only basic token transfers, swaps, and a few other transaction types are supported via predicate logic. Withdrawals are delayed by several days to allow for challenges. For fungible assets this can be mitigated by liquidity providers, but there is an associated capital cost. 
 ```
 
 2. One of the solutions that has been gaining a lot of traction lately is zkRollups. With the use of a diagram explain the key features of zkRollups. Argue for or against this solution highlighting its benefits or shortcomings with respect to other solutions proposed or in use.
