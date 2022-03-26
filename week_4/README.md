@@ -42,7 +42,9 @@ plasma:
 A plasma chain is a separate blockchain that is anchored to the main Ethereum chain, and uses fraud proofs (like optimistic rollups) to arbitrate disputes.
 
 challenges:
-Does not support general computation. Only basic token transfers, swaps, and a few other transaction types are supported via predicate logic. Withdrawals are delayed by several days to allow for challenges. For fungible assets this can be mitigated by liquidity providers, but there is an associated capital cost. 
+Does not support general computation. Only basic token transfers, swaps, and a few other transaction types are supported via predicate logic. 
+Withdrawals are delayed by several days to allow for challenges. For fungible assets this can be mitigated by liquidity providers, but there is an associated capital cost. 
+Relies on one or more operators to store data and serve it upon request.
 ```
 
 2. One of the solutions that has been gaining a lot of traction lately is zkRollups. With the use of a diagram explain the key features of zkRollups. Argue for or against this solution highlighting its benefits or shortcomings with respect to other solutions proposed or in use.
