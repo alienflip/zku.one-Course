@@ -8,6 +8,7 @@
 
 ```
 Solution: sharding
+This is the process of splitting infrastructure into smaller pieces in an attempt to scale a network.
 
 pros:
 
@@ -15,17 +16,23 @@ Cons:
 ```
 ```
 Solution: rollups
+A rollup is a type of scaling solution that works by executing transactions outside of Layer 1 but posting transaction data on Layer 1. This allows the rollup to scale the network and still derive its security from the Ethereum consensus. 
 
 pros:
+They will also enable a new breed of applications that require cheaper transactions and faster confirmation time. All of this while being fully secured by the Ethereum consensus. 
 
 Cons:
+Composability is one of them. In order to compose a transaction that uses multiple protocols, all of them would have to be deployed on the same rollup. Another challenge is fractured liquidity. Lower liquidity usually means higher slippage and worse trade execution. 
 ```
 ```
 Solution: sidechains
+A sidechain is a separate blockchain which runs in parallel to Mainnet and operates independently. It has its own consensus algorithm (e.g. proof-of-authority, Delegated proof-of-stake, Byzantine fault tolerance). It is connected to Mainnet by a two-way bridge.
 
 pros:
+Supports general computation, EVM compatibility. Established technology.
 
 Cons:
+Less decentralized. Uses a separate consensus mechanism. Not secured by layer 1 (so technically it’s not layer 2).
 ```
 
 2. One of the solutions that has been gaining a lot of traction lately is zkRollups. With the use of a diagram explain the key features of zkRollups. Argue for or against this solution highlighting its benefits or shortcomings with respect to other solutions proposed or in use.
