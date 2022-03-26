@@ -25,7 +25,7 @@
 3. ZKSync 2.0 was recently launched to testnet and has introduced ZKPorter. Argue for or against ZKPorter, highlighting the advantages or shortcomings in this new protocol.
 
 ```
-
+What does zkPorter solve? Well, it allows for large scale network scalability on an exponential scale, and also allows for composability of applications and protocols.
 ```
 
 ## Recursive SNARK’s
