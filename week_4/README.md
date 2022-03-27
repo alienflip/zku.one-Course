@@ -121,11 +121,15 @@ At some point, somone will make the descision to abstract out of zkPorter's shar
 1. Why would someone use recursive SNARK’s? What issues does it solve? Are there any security drawbacks?
 
 ```
+There are a number of use cases for recursive composition. One of the most well-known at the moment is that of Coda, a fully-succinct blockchain protocol allowing clients to validate the entire chain by checking a small cryptographic proof in the tens of kilobytes. Recursive proofs have also been proposed for other blockchain scaling solutions, such as recursively proving validity of Bitcoin’s proof of work consensus algorithm, and at Celo using bounded recursion to efficiently verify aggregated signatures for mobile clients.
 ```
 
 2. What is Kimchi and how does it improve PLONK?
 
 ```
+In Mina, zkApps (zero-knowledge smart contracts) can be written in typescript using the snarkyjs library, and then compiled down to some intermediary representation with snarky. A Kimchi compiler can then be used to compile the program into the prover and verifier indexes, and both sides can use Kimchi provided functionalities to produce proofs as well as verify them. The verifier index is uploaded on chain, which allows anyone to verify proofs contained in transactions that claim that they executed a zkApp correctly.
+
+Kimchi is a collection of improvements, optimizations, and alterations made on top of PLONK. For example, it overcomes the trusted setup limitation of PLONK by using a bulletproof-style polynomial commitment inside of the protocol. This way, there is no need to trust that the participants of the trusted setup were honest (if they were not, they could break the protocol)
 ```
 
 ## Final Project Ideas
