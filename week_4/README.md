@@ -158,4 +158,7 @@ Project 1: pros: innovative and exciting! cons: large project with many aspects 
 1. If you have a chance to meet with the people who built ZKSync and Mina, what questions would you ask them about their protocols?
 
 ```
+zkSync: What do you guys think about worst case scenario of what your technology will enable?
+
+Mina: How the heck did you guys come up with such a nice protocol?! And will the be a mobile friendly version?
 ```
