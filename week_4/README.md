@@ -88,6 +88,11 @@ How difficult it will be to run a coordinator node, and the effects this has on 
 3. Ethereum is a state machine that moves forward with each new block. At any instance, it provides a complete state of Ethereum consisting of the data related to all accounts and smart contracts running on the EVM. The state of Ethereum modifies whenever a transaction is added to the block by changing the balances of accounts. Based on the massive adoption of Ethereum across the globe, this state has become a bottleneck for validators trying to sync with the network as well as validate transactions. Briefly describe the concept of stateless client, and how they help resolve this issue? Explain how Zero-Knowledge improves on the concept of stateless client?
 
 ```
+Well, the stateless client is nothing but a concept that enables nodes to validate a block without storing the Ethereum state. 
+
+Mining new blocks will be moved from proof of work (PoW) to proof of stake (PoS). A user can become a miner by staking a minimum amount of Ethereum live on the blockchain. This allows a miner to vote on the next block to create. Consensus comes very quickly, within one block of the evaluated block, because lengthy hash cryptography is no longer used to create blocks. This greatly reduces electricity requirements, therefore cost of running a node. Additionally, the held stake is an economic incentive / punishement for any miner that performs nefarious activity.
+
+This is exactly analogous to zkp: proving a state without revealing the state of the blockchain. In our case, not revealing means not storing.
 ```
 
 
