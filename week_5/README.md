@@ -1,5 +1,3 @@
-## Which stream?
-
 ## Shielding the TX
 
 1. You have been asked to present a mechanism that will allow a user to privately and securely bridge 100,000 UST tokens from Ethereum to Harmony. Draft a write-up explaining the protocol to be built to cater for this need, highlighting the challenges to be faced and potential resolution to them.
