@@ -64,7 +64,7 @@ The Join Split proof allows a set of input notes to be joined or split into a se
 ```
 New commitment structure, allowing for token swap:
 
-Commitment = Poseidon().'
+Commitment = Poseidon(chainID, amount, tokenAddressOne, tokenAddressTwo, pubKey, blinding).'
 ```
 
 2. Describe how the UTXO scheme works on the VAnchor contract.
