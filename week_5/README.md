@@ -23,7 +23,25 @@ The wormhole hack can be described by a logic fault where the contracts mistaken
 1. Briefly explain the concept of AZTEC Note and how the notes are used to privately represent various assets on a blockchain. There are various proofs utilized by the AZTEC protocol including range proofs, swap proofs, dividend proofs and join-split proofs. Highlight the features of these proofs and the roles they play in creating confidential transactions on the blockchain
 
 ```
+The core of any AZTEC transaction is a Note. The state of notes are managed by a Note Registry for any given asset. The user’s balance of any AZTEC asset is made up of the sum of all of the valid notes their address owns in a given Note Registry.
 ```
+
+```
+This is used to prove that an AZTEC note is greater than another AZTEC note or vice versa. This is useful for proving that ownership of an asset post trade is below a regulatory maximum. It can also be used to build identity and group membership schemes.
+```
+
+```
+The bilateral swap proof allows an atomic swap of two notes to take place. This is useful for trading two assets e.g fiat and a loan/bond/security. A validated proof, proves that the makers bid note is equal to the takers ask note and the makers ask note is equal to the takers bid note.
+```
+
+```
+This proof allows the prover to prove that the input note is equal to an output note multiplied by a ratio. This is useful for paying interest from an asset.
+```
+
+```
+The Join Split proof allows a set of input notes to be joined or split into a set of output notes. Usually this is used to combine note values into a larger note, or split a note into multiple notes with different owners. This proof ensures that the sum of the input notes is equal to the sum of the output notes.
+```
+
 
 ## Webb
 
