@@ -52,13 +52,19 @@ The Join Split proof allows a set of input notes to be joined or split into a se
 [anchor](https://github.com/webb-tools/protocol-solidity/blob/main/contracts/anchors/AnchorBase.sol)
 
 ```
-
+'Commitment = Poseidon(chainID, amount, pubKey, blinding).'
 ```
 
 [vanchor](https://github.com/webb-tools/protocol-solidity/blob/main/contracts/vanchors/VAnchor.sol)
 
 ```
+'Commitment = Poseidon(chainId, nullifier, secret)'
+```
 
+```
+New commitment structure, allowing for token swap:
+
+Commitment = Poseidon().'
 ```
 
 2. Describe how the UTXO scheme works on the VAnchor contract.
