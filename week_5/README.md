@@ -74,11 +74,7 @@ The Join Split proof allows a set of input notes to be joined or split into a se
 ```
 
 ```
-'	Using the preimage / UTXO of the commitment, users can generate a zkSNARK proof that
-	the UTXO is located in one-of-many VAnchor merkle trees and that the commitment's
-	destination chain id matches the underlying chain id of the VAnchor where the
-	transaction is taking place. The chain id opcode is leveraged to prevent any
-	tampering of this data.'
+'Using the preimage / UTXO of the commitment, users can generate a zkSNARK proof that the UTXO is located in one-of-many VAnchor merkle trees and that the commitment's destination chain id matches the underlying chain id of the VAnchor where the transaction is taking place. The chain id opcode is leveraged to prevent any tampering of this data.'
 ```
 
 ## Thinking In ZK
