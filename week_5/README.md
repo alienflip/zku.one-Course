@@ -49,6 +49,14 @@ The Join Split proof allows a set of input notes to be joined or split into a se
 
 1. What is the difference between commitments made to the Anchor and VAnchor contracts? Can you think of a new commitment structure that could allow for a new feature? (eg: depositing one token and withdrawing another?) if so, what would the commitment look like?
 
+[anchor](https://github.com/webb-tools/protocol-solidity/blob/main/contracts/anchors/AnchorBase.sol)
+
+```
+
+```
+
+[vanchor](https://github.com/webb-tools/protocol-solidity/blob/main/contracts/vanchors/VAnchor.sol)
+
 ```
 
 ```
