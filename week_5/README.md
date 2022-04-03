@@ -93,3 +93,5 @@ Aztec: Why did you decide to use snarks rather than starks?
 ```
 Webb: Why did you pick substrate as your primary inter-chain mechanism over Cosmos? 
 ```
+
+## [Final Project Proposal](https://github.com/alienflip/degenDeploy/blob/master/proposal.md)
