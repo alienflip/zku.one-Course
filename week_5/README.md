@@ -34,6 +34,8 @@ This is used to prove that an AZTEC note is greater than another AZTEC note or v
 The bilateral swap proof allows an atomic swap of two notes to take place. This is useful for trading two assets e.g fiat and a loan/bond/security. A validated proof, proves that the makers bid note is equal to the takers ask note and the makers ask note is equal to the takers bid note.
 ```
 
+[More on atomic swaps](https://hackernoon.com/transferring-tokens-across-blockchains-the-definitive-guide-to-bridges-atomic-swaps-and-more)
+
 ```
 This proof allows the prover to prove that the input note is equal to an output note multiplied by a ratio. This is useful for paying interest from an asset.
 ```
@@ -48,11 +50,13 @@ The Join Split proof allows a set of input notes to be joined or split into a se
 1. What is the difference between commitments made to the mixer, Anchor and VAnchor contracts? Can you think of a new commitment structure that could allow for a new feature? (eg: depositing one token and withdrawing another?) if so, what would the commitment look like?
 
 ```
+
 ```
 
 2. Describe how the UTXO scheme works on the VAnchor contract.
 
 ```
+
 ```
 
 ## Thinking In ZK
@@ -60,4 +64,5 @@ The Join Split proof allows a set of input notes to be joined or split into a se
 1. If you have a chance to meet with the people who built the above protocols what questions would you ask them?
 
 ```
+
 ```
