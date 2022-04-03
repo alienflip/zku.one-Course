@@ -63,8 +63,22 @@ The Join Split proof allows a set of input notes to be joined or split into a se
 
 2. Describe how the UTXO scheme works on the VAnchor contract.
 
+[UTXO](https://coincentral.com/utxo-beginners-explainer/?msclkid=6662272ab34711ec8ec3f4a6e1e6bf88)
+
+```
+'UTXO stands for Unspent Transaction (TX) Output. Basically, it’s the amount of leftover cryptocurrency change that you receive from each transaction.'
 ```
 
+```
+'Implementing UTXOs greatly simplifies the accounting methods of the blockchain. Instead of having to track and store every single transaction, in order no less, we just need to track the unspent coins, also known as the UTXOs.'
+```
+
+```
+'	Using the preimage / UTXO of the commitment, users can generate a zkSNARK proof that
+	the UTXO is located in one-of-many VAnchor merkle trees and that the commitment's
+	destination chain id matches the underlying chain id of the VAnchor where the
+	transaction is taking place. The chain id opcode is leveraged to prevent any
+	tampering of this data.'
 ```
 
 ## Thinking In ZK
