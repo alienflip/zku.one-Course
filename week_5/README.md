@@ -88,5 +88,8 @@ Commitment = Poseidon(chainID, amount, tokenAddressOne, tokenAddressTwo, pubKey,
 1. If you have a chance to meet with the people who built the above protocols what questions would you ask them?
 
 ```
-
+Aztec: 
+```
+```
+Webb: Why did you pick substrate as your primary inter-chain mechanism over Cosmos? 
 ```
