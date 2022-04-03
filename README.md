@@ -1,3 +1,1 @@
-# zku
-
-[project](https://github.com/alienflip/degenDeploy)
+# [final project](https://github.com/alienflip/degenDeploy)
