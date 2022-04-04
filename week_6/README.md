@@ -6,6 +6,10 @@
 
 ```
 
+```
+
+```
+
 # Ultra light clients
 
 1. Describe a specification for a light client based on zero-knowledge proofs. You should explain at least how to get the client synced up to the current state of the blockchain. Preferably go as far as explain how transaction inclusion proofs are generated too.
@@ -15,6 +19,10 @@
 ```
 
 2. What is the relevance of light clients for bridge applications? How does it affect relayers?
+
+```
+
+```
 
 ```
 
