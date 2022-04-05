@@ -44,11 +44,13 @@ Output: Proof that includes the transition from epoch i committee to epoch j com
 2. What is the relevance of light clients for bridge applications? How does it affect relayers?
 
 ```
-
+Light clients allow a user to get sufficient evidence of a transaction’s inclusion in a blockchain without having to operate a full node themselves. 
+Bitcoin does this with Bitcoin SPV.
+Through this process, provers (full nodes) can provide verifiers (light clients) sufficient evidence to prove that a particular chain tip represents the longest (heaviest/most difficult) chain, without the light client putting trust in any 3rd party. Through a Merkle path to a transaction root in one of the block headers, a user can know that a transaction is included in a block in the longest chain.
 ```
 
 ```
-
+"without the light client putting trust in any 3rd party" == No relayers!
 ```
 
 # Horizon Bridge
