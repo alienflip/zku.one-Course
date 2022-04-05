@@ -59,27 +59,27 @@ Through this process, provers (full nodes) can provide verifiers (light clients)
 
 1.a. Briefly explain how the bridge process works.
 
-harmony light client
+`harmony light client`
 ```
 
 ```
 
-ethereum light client
+`ethereum light client`
 ```
 
 ```
 
-token locker on harmony
+`token locker on harmony`
 ```
 
 ```
 
-token locker on ethereum
+`token locker on ethereum`
 ```
 
 ```
 
-test contract
+`test contract`
 ```
 
 ```
