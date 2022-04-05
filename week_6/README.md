@@ -3,7 +3,7 @@
 1. Explain each aspect of the interoperability trilemma. Provide an example of a bridge protocol explaining which trade-offs on the trilemma the bridge makes.
 
 ```
-Generalizable-channel: this is a secure, generalised messaging channel. It sacrifieces simplicity, in the sense that to build it into other domains (except cosmos), e.g. ethereum, near etc. would be a very hard task. 
+Generalizable-channel: this is a secure, generalised messaging channel. It sacrifieces simplicity, in the sense that to build it into other domains. 
 
 Trusted-Channel: Generalisable and extensible, as there is a single custodian relays information, and can do whatever they like with the data before submitting it to the remote chain. Not secure.
 
@@ -12,7 +12,7 @@ Extensible-Channel: permit fraulent messages in edge cases, but extensible and g
 
 ```
 An example: IBC.
-Any bridge in IBC will be both generalised, and secure. It will not extensible as it is expecting all headers from the remote chain to be from the cosmos ecosystem.
+Any bridge in IBC will be both generalised, and secure. It will not extensible as it is expecting all headers from the remote chain to be from the cosmos ecosystem. So Ethereum, NEAR, Polkadot etc. are not easy plugins.
 ```
 
 # Ultra light clients
