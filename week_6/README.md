@@ -20,7 +20,25 @@ Any bridge in IBC will be both generalised, and secure. It will not extensible a
 1. Describe a specification for a light client based on zero-knowledge proofs. You should explain at least how to get the client synced up to the current state of the blockchain. Preferably go as far as explain how transaction inclusion proofs are generated too.
 
 ```
+BLS: 
+A BLS digital signature— also known as Boneh–Lynn–Shacham[1] (BLS)—is cryptographic signature scheme which allows a user to verify that a signer is authentic.
+An important property of the construction (of BLS signature aggregation) is that the scheme is secure against a rogue public-key attack without requiring users to prove knowledge of their secret keys.
+```
 
+```
+A simple ZK-based lightclient:
+
+Prover (validator/full nodes): generates a proof of committee transition from epoch i to j
+Inputs: Epoch numbers i & j, committee (BLS public keys) of epoch i
+Perform for each epoch block
+Aggregate public keys from header according to bitmap
+Check they are more than ⅔ threshold
+Check the epoch number is epoch number + 1
+Encode the epoch into bits and hash to group element
+Compute and check BLS signature
+Proof for epoch i+1 = Proof for epoch i + above operations
+Aggregate proof either iteratively or recursively
+Output: Proof that includes the transition from epoch i committee to epoch j committee
 ```
 
 2. What is the relevance of light clients for bridge applications? How does it affect relayers?
