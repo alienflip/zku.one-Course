@@ -55,9 +55,9 @@ Through this process, provers (full nodes) can provide verifiers (light clients)
 
 # Horizon Bridge
 
-1. Check out [Horizon repository](https://github.com/harmony-one/horizon). 
+[Horizon repository](https://github.com/harmony-one/horizon/contracts). 
 
-a. Briefly explain how the bridge process works.
+1.a. Briefly explain how the bridge process works.
 
 harmony light client
 ```
@@ -84,7 +84,7 @@ test contract
 
 ```
 
-b. Why HarmonyLightClient has bytes32 mmrRoot field and EthereumLightClient does not? (You will need to think of blockchain architecture to answer this)
+1.b. Why HarmonyLightClient has bytes32 mmrRoot field and EthereumLightClient does not? (You will need to think of blockchain architecture to answer this)
 
 ```
 
