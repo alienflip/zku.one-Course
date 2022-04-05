@@ -50,7 +50,7 @@ Through this process, provers (full nodes) can provide verifiers (light clients)
 ```
 
 ```
-"without the light client putting trust in any 3rd party" == No relayers!
+"without the light client putting trust in any 3rd party" == No relayers! Or, at least relayers will now also operate as miners/verifiers.
 ```
 
 # Horizon Bridge
