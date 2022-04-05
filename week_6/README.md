@@ -55,7 +55,7 @@ Through this process, provers (full nodes) can provide verifiers (light clients)
 
 # Horizon Bridge
 
-[Horizon repository](https://github.com/harmony-one/horizon/contracts). 
+[Horizon repository](https://github.com/harmony-one/horizon/tree/main/contracts). 
 
 1.a. Briefly explain how the bridge process works.
 
