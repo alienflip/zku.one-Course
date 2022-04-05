@@ -21,7 +21,7 @@ Any bridge in IBC will be both generalised, and secure. It will not extensible a
 
 ```
 BLS: 
-A BLS digital signature— also known as Boneh–Lynn–Shacham[1] (BLS)—is cryptographic signature scheme which allows a user to verify that a signer is authentic.
+A BLS digital signature— also known as Boneh–Lynn–Shacham - is cryptographic signature scheme which allows a user to verify that a signer is authentic.
 An important property of the construction (of BLS signature aggregation) is that the scheme is secure against a rogue public-key attack without requiring users to prove knowledge of their secret keys.
 ```
 
