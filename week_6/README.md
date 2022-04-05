@@ -57,8 +57,29 @@ Through this process, provers (full nodes) can provide verifiers (light clients)
 
 1. Check out [Horizon repository](https://github.com/harmony-one/horizon). 
 
-a. Briefly explain how the bridge process works (mention all necessary steps: harmony light client, ethereum light client, token locker on harmony, token locker on ethereum, test contract). Provide commented code in your submission.
+a. Briefly explain how the bridge process works.
 
+harmony light client
+```
+
+```
+
+ethereum light client
+```
+
+```
+
+token locker on harmony
+```
+
+```
+
+token locker on ethereum
+```
+
+```
+
+test contract
 ```
 
 ```
