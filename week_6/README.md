@@ -68,3 +68,20 @@ b. Why HarmonyLightClient has bytes32 mmrRoot field and EthereumLightClient does
 ```
 
 ```
+
+# Rainbow Bridge
+
+2. Explain the differences between Rainbow bridge and Horizon bridge. Which approach would you take when building your own bridge (describe technology stack you would use)?
+
+```
+
+```
+
+# Thinking In ZK
+
+1. If you have a chance to meet with the people who built the above protocols what questions would you ask them?
+
+```
+
+```
+
