@@ -103,7 +103,7 @@ Rainbow Bridge is generic. Horizon Bridge is ERC20 specific. This induces a high
 EthOnNearClient contract then memorizes the merkle roots of the DAG files for the next 4 years upon initialization. On harmony, there is a far shorter cycle (seem to remember it is 7 days?)
 ```
 ```
-The current Rainbow Bridge does not implement incentives for the maintainers who pay for the gas by relaying the headers. This is an issue compared to Horizon, as horizon has no need for constant updating.
+The current Rainbow Bridge does not implement incentives for the maintainers who pay for the gas by relaying the headers. This is not an issue on Horizon, as horizon has no need for constant updating.
 ```
 
 # Thinking In ZK
