@@ -88,7 +88,7 @@ This does checks to see if the contract parses proof receipts correctly.
 1.b. Why HarmonyLightClient has bytes32 mmrRoot field and EthereumLightClient does not? (You will need to think of blockchain architecture to answer this)
 
 ```
-The light client for ethereum is more resource-intensive since it requires tracking every single header of the Ethereum blockchain, and it requires Ethash verification. On harmony, this is not necessarily the case.
+The light client for ethereum is more resource-intensive since it requires tracking every single header of the Ethereum blockchain, and it requires Ethash verification. On harmony, this is not necessarily the case. It has an MMR root in each header already.
 ```
 
 # Rainbow Bridge
@@ -96,7 +96,14 @@ The light client for ethereum is more resource-intensive since it requires track
 2. Explain the differences between Rainbow bridge and Horizon bridge. Which approach would you take when building your own bridge (describe technology stack you would use)?
 
 ```
-Rainbow Bridge is generic. Horizon Bridge is ERC20 specific.
+Rainbow Bridge is generic. Horizon Bridge is ERC20 specific. This induces a higher latency for the Rainbow bridge.
+```
+
+```
+EthOnNearClient contract then memorizes the merkle roots of the DAG files for the next 4 years upon initialization. On harmony, there is a far shorter cycle (seem to remember it is 7 days?)
+```
+```
+The current Rainbow Bridge does not implement incentives for the maintainers who pay for the gas by relaying the headers. This is an issue compared to Horizon, as horizon has no need for constant updating.
 ```
 
 # Thinking In ZK
