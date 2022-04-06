@@ -111,6 +111,7 @@ The current Rainbow Bridge does not implement incentives for the maintainers who
 1. If you have a chance to meet with the people who built the above protocols what questions would you ask them?
 
 ```
-I would ask both parties why they decided not to use substrate at all in their solutions!
+I would ask both parties why they decided not to use substrate at all in their solutions! 
+I would also ask about the trilemma: could quantum computing add a solution too this?
 ```
 
