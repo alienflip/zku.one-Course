@@ -59,28 +59,28 @@ Through this process, provers (full nodes) can provide verifiers (light clients)
 
 1.a. Briefly explain how the bridge process works.
 
-`harmony light client`
+[harmony light client](https://github.com/harmony-one/horizon/blob/main/contracts/HarmonyLightClient.sol)
 [mmr](https://github.com/mimblewimble/grin/blob/master/doc/mmr.md#merkle-mountain-ranges)
 ```
 This is a contract that allows for relayers to add harmony data (checkpoints) to the ethereum blockchain. It does this by adding header data to a mapping of merkle mountain range roots.
 ```
 
-`ethereum light client`
+[ethereum light client](https://github.com/harmony-one/horizon/blob/main/contracts/EthereumLightClient.sol)
 ```
 Similar to the harmony light client, however verification/addition of a block can be done by anyone as long as they provide a poPoW.
 ```
 
-`token locker on harmony`
+[token locker on harmony](https://github.com/harmony-one/horizon/blob/main/contracts/TokenLockerOnHarmony.sol)
 ```
 This contract inherits from TokenLocker, and has the ability to have the upgrade with the lightClient. It will validate and execute a submission with a zkp, and then send it using the light client.
 ```
 
-`token locker on ethereum`
+[token locker on ethereum](https://github.com/harmony-one/horizon/blob/main/contracts/TokenLockerOnEthereum.sol)
 ```
 This mirrors the token locker on harmony.
 ```
 
-`test contract`
+[test contract](https://github.com/harmony-one/horizon/blob/main/test/bridge.hmy.js)
 ```
 This does checks to see if the contract parses proof receipts correctly.
 ```
