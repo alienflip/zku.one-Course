@@ -115,3 +115,4 @@ I would ask both parties why they decided not to use substrate at all in their s
 I would also ask about the trilemma: could quantum computing add a solution too this?
 ```
 
+# [Final Project (deployed to testnet)](https://github.com/alienflip/degenDeploy)
