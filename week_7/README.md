@@ -10,8 +10,10 @@
 
 3. Write in brief ( 1- 2 line for each) about the polygon’s product stack. Refer this Polygons ZK Product Overview
 
-```
+![pps]()
 
+```
+Outline: STARKS not SNARKS (Miden), Privacy for Enterprises (Nightfall), Data Availability (Avail), Tooling (Edge), Recursive zk (Zero), Decentralized and active (hermez)
 ```
 
 4. Write in brief (at least 4 -5 lines) about your learnings throughout the course.
