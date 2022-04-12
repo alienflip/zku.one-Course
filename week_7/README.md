@@ -10,7 +10,7 @@
 
 3. Write in brief ( 1- 2 line for each) about the polygon’s product stack. Refer this Polygons ZK Product Overview
 
-![pps]()
+![pps](https://github.com/alienflip/zku/blob/main/week_7/94144218c474f5a22351eab729e40f250e2a5f48-1289x726.webp)
 
 ```
 Outline: STARKS not SNARKS (Miden), Privacy for Enterprises (Nightfall), Data Availability (Avail), Tooling (Edge), Recursive zk (Zero), Decentralized and active (hermez)
