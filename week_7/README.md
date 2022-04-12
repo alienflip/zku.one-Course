@@ -17,7 +17,7 @@
 4. Write in brief (at least 4 -5 lines) about your learnings throughout the course.
 
 ```
-1. before the course, I had a cursory understanding of why a zkp is useful. It is now significantly better. 
+Before the course, I had a cursory understanding of why a zkp is useful. It is now significantly better. 
 What is also nice is that I know where the gaps in my knowledge are with zkps. 
 This is potentially even more valuable that what I learned during the course. 
 ```
