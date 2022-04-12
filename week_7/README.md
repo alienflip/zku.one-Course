@@ -23,5 +23,7 @@
 [Final Project](https://github.com/alienflip/degenDeploy)
 
 ```
-So milestone 1 is done: launching on harmony testnet with a feature complete product. Milestone 2 will be skipped, as this app has no need for a DAO (although I will make another proposal soon for a product with such a need!), so next on the list is main-net lauch. The DoD for this is simple: attempt to use the tool on an existing mixer, and prove it works (which, in fact, is ironic, since proof it works breaks the tool!)
+So milestone 1 is done: launching on harmony testnet with a feature complete product. 
+Milestone 2 will be skipped, as this app has no need for a DAO (although I will make another proposal soon for a product with such a need!), so next on the list is main-net lauch. 
+The DoD for this is simple: attempt to use the tool on an existing mixer, and prove it works (which, in fact, is ironic, since proof it works breaks the tool!).
 ```
