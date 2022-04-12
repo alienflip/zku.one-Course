@@ -11,11 +11,15 @@
 3. Write in brief ( 1- 2 line for each) about the polygon’s product stack. Refer this Polygons ZK Product Overview
 
 ```
+
 ```
 
 4. Write in brief (at least 4 -5 lines) about your learnings throughout the course.
 
 ```
+1. before the course, I had a cursory understanding of why a zkp is useful. It is now significantly better. 
+What is also nice is that I know where the gaps in my knowledge are with zkps. 
+This is potentially even more valuable that what I learned during the course. 
 ```
 
 5. Please provide an update on what you have achieved on your final project and what you plan on doing next.
