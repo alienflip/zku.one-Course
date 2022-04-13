@@ -1,6 +1,18 @@
 1. Celestia is set out to be the consensus and data availability layer for blockchains. Chains built on top of Celestia can concentrate on execution. Do you think data availability is the true bottleneck to scale blockchain? Argue for and against the need for the data availability layer for blockchain.
 
 ```
+“Data availability” and the “data availability problem” are terms used to refer to a specific problem faced in various blockchain scaling strategies. 
+This problem asks: how can nodes be sure that when a new block is produced, all of the data in that block was actually published to the network? 
+The dilemma is that if a block producer doesn’t release all of the data in a block, no one could detect if there is a malicious transaction hidden within that block.
+
+Large block sizes: But what if we wanted to increase the block size limit? Less people will afford to run full nodes and independently verify the chain, and more people will run light clients that are less secure. 
+This is bad for decentralization, because it would be easier for block producers to change the protocol rules and insert invalid transactions that light clients will accept as valid.
+
+Sharding: In order to solve the problem of detecting if any shard accepted an invalid transaction, you need to be able to guarantee that all the data in that shard was published and made available, so that any invalid transaction can be proven with a fraud proof.
+
+These could be solved with Data availability proofs.
+
+My opinion is that any innovation is useful in some context, and that no technology is the "true" winner.
 ```
 
 2. Another popular zero knowledge technology in the market today is zk-STARKs. Starkware uses this technology to power dApps such as DiversiFi, ImmutableX, dYdX, etc.. List some advantages of zk-Starks over zk-Snarks. In your opinion, which one is better and why?
