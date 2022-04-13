@@ -18,7 +18,10 @@ My opinion is that any innovation is useful in some context, and that no technol
 2. Another popular zero knowledge technology in the market today is zk-STARKs. Starkware uses this technology to power dApps such as DiversiFi, ImmutableX, dYdX, etc.. List some advantages of zk-Starks over zk-Snarks. In your opinion, which one is better and why?
 
 ```
+From my understanding, the main difference is the setup: one has a trusted element, the other a trustless. However, this is a repeated question! See below.
 ```
+
+[starks vs snarks](https://github.com/alienflip/zku/tree/main/week_1)
 
 3. Write in brief ( 1- 2 line for each) about the polygon’s product stack. Refer this Polygons ZK Product Overview
 
