@@ -23,6 +23,10 @@ From my understanding, the main difference is the setup: one has a trusted eleme
 
 [starks vs snarks](https://github.com/alienflip/zku/tree/main/week_1)
 
+```
+My opinion is that there must be a trade-off somewhere, and that I would like to have more hands on experience with starks before making this call.
+```
+
 3. Write in brief ( 1- 2 line for each) about the polygon’s product stack. Refer this Polygons ZK Product Overview
 
 ![pps](https://github.com/alienflip/zku/blob/main/week_7/94144218c474f5a22351eab729e40f250e2a5f48-1289x726.webp)
